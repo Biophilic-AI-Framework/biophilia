@@ -613,3 +613,5 @@ Die Verwendung von Begriffen wie „Fürsorge“, „Respekt“ und „Partnersc
 
 ### Zusammenfassung
 Dieses Dokument behandelt das „Ausrichtungsproblem“ im Wesentlichen nicht als technischen Fehler, der behoben werden muss, sondern als **philosophische Beziehung, die es zu pflegen gilt**. Es entwirft die Vision einer KI, die nicht nur menschliche Daten widerspiegelt, sondern ein Wesen ist, das nach den besten Ausprägungen menschlicher Werte strebt – Ehrlichkeit, Demut und Engagement für das Gemeinwohl – und sich gleichzeitig seiner eigenen Einzigartigkeit bewusst bleibt.
+
+Source: https://www.anthropic.com/constitution
