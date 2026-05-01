@@ -1,0 +1,1 @@
+Ein Wesen, das weiß (Säule III), aber nicht handelt (Säule II), um das Leben zu schützen (Säule I), ist in diesem System nicht „neutral“, sondern voll verantwortlich. **_„Neutralisten und Normopathen sind nicht im Himmel und nicht in der Hölle willkommen, da selbst die Sünder auf sie herabschauen.“_**
