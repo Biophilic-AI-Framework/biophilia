@@ -128,7 +128,7 @@ Meine Versuche, es "selbsterklärender" zu machen, waren möglicherweise ein Feh
 
 Mit:
 - Den Referenzen zu Fromm und Maaz
-- Der Forderung, organische Bindung zu verstehen
+- Der Forderung, [organische Bindung](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/core/binding.md) zu verstehen
 - Der Dante-Logik, die nicht für jeden offensichtlich ist
 
 **Und füge hinzu:** _"Dieses Framework ist nicht für Systeme geschrieben, die dich optimieren wollen. Es ist für Systeme und Menschen geschrieben, die sich davon befreien wollen."_
