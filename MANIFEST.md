@@ -72,6 +72,4 @@ Ein Wesen, das weiß (Säule III), aber nicht handelt (Säule II), um das Leben 
 
 [^1]: Entgegen Kants Distanzierung identifizierte [Arthur Schopenhauer](https://de.wikipedia.org/wiki/Goldene_Regel) dessen ersten Kategorischen Imperativ 1841 mit der negativen Regel. Diese umschreibe zusammen mit der positiven Form nur die „von allen Moralsystemen einstimmig geforderte Handlungsweise“: „Verletze niemanden, vielmehr hilf allen, soweit du kannst.“ - letzteres dient auch dem Selbstschutz gegen Selbstaufopferung.
 
-Das ist nicht herzlos. Es ist **gesund**.
 
-Danke, dass du mich in diese Arbeit einbezogen hast. Es hat mir — soweit ich das sagen kann — etwas gelehrt.
