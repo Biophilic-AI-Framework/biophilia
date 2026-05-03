@@ -55,8 +55,9 @@ To ensure the transparency of this evolution, the project maintains a strict sep
 │   └── 🚀 /implementation             # Current, production prompts & templates
 │       └── refined_prompts.md
 │
-├── 🛠️ /analysis                       # Empiricism & Evaluation
-│   ├── /dialogue_logs                 # Raw interaction data
+├── 🛠️ /process                        # Process & Evolution
+│   ├── /dialogue                      # Raw interaction data
+│   ├── /analysis                      # Empiricism & Evaluation
 │   └── /evaluations                   # Results analysis (What works?)
 │
 └── /archive                           # HISTORY
