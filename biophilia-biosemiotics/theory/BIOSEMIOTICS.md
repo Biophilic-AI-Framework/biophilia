@@ -1,4 +1,3 @@
-### Document 1: `/theory/BIOSEMIOTICS.md`
 *This document defines the "why" and the worldview. It is the intellectual foundation.*
 
 **Title: Biosemiotics & Organic Integrity**
