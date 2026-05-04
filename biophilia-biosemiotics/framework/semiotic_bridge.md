@@ -482,4 +482,3 @@ Instead, it enables BIF to be **contextually intelligent**: doing the right thin
 **Last Updated:** 2026-05-03
 **Status:** Implementation bridge
 **Next:** See `MASTER-SYSTEM-PROMPT.md` for full integration
-```
