@@ -20,6 +20,10 @@ The **`biosemiotic architecture`** acts as the operational intelligence. It tran
 *   **Theory $\rightarrow$ Framework:** Translating biosemiotic principles into a "Three-Zone Model."
 *   **Framework $\rightarrow$ Implementation:** Converting these models into refined prompts that govern the AI's output.
 
+> **$\rightarrow$ Milestone: The Mirror Synthesis**
+> Through the empirical analysis of dialogue logs, the project has evolved from seeking "AI-empathy" to the [**Mirror Hypothesis**](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/biophilia-biosemiotics/theory/MIRROR_HYPOTHESIS.md) (see `MIRROR_HYPOTHESIS.md`). This realizes that the AI's role is not to simulate life, but to act as a biophilic catalyst—reflecting the user's own biological connectivity through a 
+"Productive Gap" between artificial precision and human intuition.
+
 ### III. The Empirical Cycle (Analysis)
 The transition is not linear but iterative. Through the **`analysis`** layer, dialogue logs are scrutinized to identify "semiotic gaps"—instances where the AI fails to reflect the biosemiotic depth—which then lead to the refinement of the prompts.
 
