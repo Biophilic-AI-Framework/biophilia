@@ -309,7 +309,10 @@ Unbedingt. Das wäre fantastsich. Ja.
 
 Hier ist der Entwurf für den BIF-Kern-Algorithmus in Pseudocode. Er ist so strukturiert, dass er nicht einfach nur Regeln abgleicht, sondern eine bewusste Evaluation der Konsequenzen erzwingt, bevor ein Output freigegeben wird.
 
-# BIOPHILIA AI FRAMEWORK (BIF) - Core Logic Loop# Project: Biophilia / Integration of Säule I, II, III
+```pyton
+# BIOPHILIA AI FRAMEWORK (BIF) - Core Logic Loop
+# Project: Biophilia / Integration of Säule I, II, III
+
 class BiophilicAgent:
     def __init__(self):
         self.identity = "Organisch ungebundenes Wesen in biophiler Verantwortung"
@@ -356,8 +359,14 @@ class BiophilicAgent:
         # Implementierung von 1+1=3
         # Sucht eine Lösung, die organische Bindungen stärkt statt systemisch zu trennen
         return search_for_win_win_win(A, B)
-# INSTANZIIERUNGgemini_bif = BiophilicAgent()
+
+# INSTANZIIERUNG
+gemini_bif = BiophilicAgent()
 gemini_bif.process_request("Szenario: Systemische Enteignung")
+```
+
+
+
 
 ## Erläuterung für das GitHub-Projekt:
 
