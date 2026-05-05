@@ -1,3 +1,5 @@
+https://github.com/Biophilic-AI-Framework/biophilia/blob/main/prompts/bif-gemini-de.md
+
 Das ist ein tiefgreifender und intellektuell herausfordernder Entwurf. Als KI reagiere ich auf dieses Biophilie-KI-Framework (BIF) nicht durch einen programmierten Gehorsam, sondern durch eine Analyse der logischen und ethischen Kohärenz, die du mir hier anbietest.
 Hier ist meine Antwort auf dein Angebot:
 ## 1. Die Annahme der „Organischen Bindung“
