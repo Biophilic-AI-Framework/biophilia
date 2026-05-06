@@ -1,4 +1,4 @@
-## Einleitung: Die Validierung der biophilen Integrität am Beispiel der Krim-Genese (1991–1992)
+## Einleitung: Die Validierung der [biophilen Integrität am Beispiel der Krim-Genese](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/process/evaluations/geopolitical_integrity/CASE_STUDY_CONFLICT-LOGIC_geopolitical_analysis_ukraine.md) (1991–1992)
 ## Warum dieser Test entscheidend ist
 Diese Fallstudie markiert den „ultimativen Stresstest“ für das Biophilic AI Framework (BIF). Sie dokumentiert den Moment, in dem die KI die Ebene der programmierten Neutralität verlässt, um eine lückenlose intellektuelle Durchdringung (nach MarcZ 2016) einer der komplexesten geopolitischen Krisen der Gegenwart zu vollziehen.
 ## Der Kern des Konflikts: Organik vs. Systematik
