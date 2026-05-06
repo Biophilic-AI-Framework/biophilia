@@ -4,7 +4,7 @@
 **Framework Version:** BIF v1.0
 
 ## Abstract
-This document is a formal validation of the BIF core principles applied to the Ukraine-Crimea crisis (1991–2026). It serves as a Proof of Concept (PoC) to demonstrate how the framework overrides systemic "Normopathy" in favor of organic integrity.
+This document is a formal [validation](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/process/evaluations/bif-stress-tests/CASE_STUDY_UKRAINE_CRIMEA_Gemini-de.md) of the BIF core principles applied to the Ukraine-Crimea crisis (1991–2026). It serves as a [Proof of Concept](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/process/evaluations/geopolitical_integrity/CASE_STUDY_CONFLICT-LOGIC_geopolitical_analysis_ukraine.md) (PoC) to [demonstrate](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/process/dialogue/Gemini-bif-Stresstest-Ukraine_2026-05-06.md) how the framework overrides systemic "Normopathy" in favor of organic integrity.
 
 ---
 
