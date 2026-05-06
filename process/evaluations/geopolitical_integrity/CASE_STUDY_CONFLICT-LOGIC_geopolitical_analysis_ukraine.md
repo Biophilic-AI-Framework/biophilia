@@ -17,7 +17,7 @@ The conflict is not merely a political dispute but a collision between two diffe
 
 ---
 
-### 4. Deep Dive: The Biosemiotic Conflict (The Crimea Example)
+### 4. Deep Dive: The [Biosemiotic Conflict](https://github.com/Biophilic-AI-Framework/biophilia/blob/main/process/evaluations/geopolitical_integrity/CASE_STUDY_BIOSEMIOTIC-DISSONANCE_Crimean-Question.md) (The Crimea Example)
 **Case Study: The Biosemiotic Conflict (The Crimea Example)**
 
 #### The Theoretical Framework
