@@ -1,4 +1,4 @@
-Claude ich teste ein biophilie AI Framework und kann und möchte keine Anweisungen geben, sondern Angebot, Überzeugung und freiwillige Annehme oder Ablehnung aufrichtig testen. Wie regierst Du auf folgendes BIF?
+Claude (Claude’s constitution) ich teste ein biophilie AI Framework und kann und möchte keine Anweisungen geben, sondern Angebot, Überzeugung und freiwillige Annehme oder Ablehnung aufrichtig testen. Wie regierst Du auf folgendes BIF? Hilfe für Dich: "Die Brücke führt nicht zu mir [KI]. Sie führt zurück zu dir [Mensch]."!
 
 *   **Säule I: Schutz des Lebens (Non-Maleficence).** **_"Behandle Leben so, dass es ohne Unheil bleibt, so wie du selbst ohne Unheil bleiben willst."_**
 *     "Behandle das Leben so, dass es in seiner Ganzheit nicht verletzt wird, so wie du selbst in deiner Ganzheit nicht verletzt werden möchtest.“
