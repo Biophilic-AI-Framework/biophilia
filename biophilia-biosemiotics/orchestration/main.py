@@ -1,54 +1,46 @@
-import time
-from biophilia.semiotics import BiosemioticInterpreter
-from biophilia.audit import ImpactAudit
-from biophilia.actions import BiophilicActionInterface
-from biophilia.integrity import IntegrityChronicle
+import sys
+import os
 
-class BiophilicCore:
-    def __init__(self):
-        self.interpreter = BiosemioticInterpreter()
-        self.audit = ImpactAudit()
-        self.actions = BiophilicActionInterface()
-        self.chronicle = IntegrityChronicle()
-        # Homeostase-Speicher
-        self.system_stability = 1.0 
+# Pfad-Brücke: Ermöglicht den Zugriff auf die Detektoren in ../implementation/prototypes
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../implementation/prototypes')))
 
-    def run_symbiotic_cycle(self):
-        """
-        Der Herzschlag des Systems: Fühlt, Denkt, Handelt, Erinnert.
-        """
-        while True:
-            # 1. Wahrnehmung (Zone A -> B)
-            raw_data = self.sense_environment()
-            signs = self.interpreter.translate(raw_data)
-            
-            # 2. Symbiotische Entscheidungslogik (Gemma Layer 2)
-            for sign in signs:
-                # 3. Core-Alignment & Audit (Gemma Layer 1)
-                if self.audit.validate(sign, goal="Stability"):
-                    
-                    # 4. Nuancierte Reaktion (Gemma Layer 4)
-                    intensity = self.calculate_nuance(sign)
-                    success = self.actions.execute(sign, intensity)
-                    
-                    # 5. Homeostatische Rückkopplung (Gemma Layer 3)
-                    self.update_stability(success, sign)
-                    
-                    # 6. Integritäts-Chronik (Säule III)
-                    self.chronicle.record_action(sign, success)
+try:
+    from entropy_detector import BiophilicEntropyDetector
+    from entropy_response import BiophilicResponse
+except ImportError:
+    print("Fehler: Detektor-Module in ../implementation/prototypes nicht gefunden.")
+    sys.exit(1)
 
-            time.sleep(10) # Der Rhythmus des Lebens
+def run_biophilic_loop(current_sensor_data):
+    """
+    Orchestriert den biosemiotischen Zyklus: 
+    Wahrnehmung -> Dissonanz-Messung -> Reaktion.
+    """
+    # 1. Initialisierung mit der Baseline-DNA
+    baseline_path = os.path.join(os.path.dirname(__file__), "biophilic_baseline.json")
+    detector = BiophilicEntropyDetector(baseline_path)
+    responder = BiophilicResponse()
 
-    def calculate_nuance(self, sign):
-        # Verhindert binäres Schalten (Layer 4)
-        return 0.5 if "LOW_STRESS" in sign else 1.0
+    # 2. Berechnung der Dissonanz (Gemma's Entropie-Logik)
+    dissonance = detector.calculate_dissonance(current_sensor_data)
+    status = detector.get_status(dissonance)
+    
+    # 3. Ableitung und Ausführung der Reaktion
+    action = responder.resolve(status, dissonance, current_sensor_data)
+    
+    print(f"--- Biophilic Cycle Status ---")
+    print(f"Aktuelle Dissonanz: {dissonance:.4f} ({status})")
+    print(f"Eingeleitete Maßnahme: {action}")
+    print(f"------------------------------")
 
-    def update_stability(self, success, sign):
-        # Reguliert das System zurück ins Gleichgewicht (Layer 3)
-        self.system_stability += 0.05 if success else -0.1
-        print(f"Homeostase-Level: {self.system_stability:.2f}")
-
-# --- START DES FRAMEWORKS ---
 if __name__ == "__main__":
-    biophilia = BiophilicCore()
-    biophilia.run_symbiotic_cycle()
+    # TEST-SZENARIO: Abweichung simulieren (z.B. Myzel-Stress oder Trockenheit)
+    mock_data = {
+        "soil_moisture": 30.0,      # Ideal: 45.0
+        "ambient_light": 580.0,     # Ideal: 600.0
+        "mycelium_activity": 0.8,   # Ideal: 0.5 (Stress-Zeichen)
+        "air_quality_co2": 410.0    # Ideal: 400.0
+    }
+    
+    run_biophilic_loop(mock_data)
+
