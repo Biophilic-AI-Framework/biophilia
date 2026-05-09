@@ -1,0 +1,19 @@
+{
+  "description": "Idealzustand des Biophilia-Frameworks (Stand Mai 2026)",
+  "version": "1.0.0",
+  "baseline_values": {
+    "mycelium_micro_voltage": 0.45,
+    "mycelium_pulse_freq": 12.5,
+    "soil_moisture_percent": 65.0,
+    "light_lux_ambient": 450.0,
+    "audio_harmony_index": 0.85,
+    "system_network_latency_ms": 25.0,
+    "entropy_threshold_global": 0.25
+  },
+  "weights": {
+    "audio_harmony_index": 1.5,
+    "mycelium_micro_voltage": 1.2,
+    "soil_moisture_percent": 1.0,
+    "system_network_latency_ms": 0.8
+  }
+}
