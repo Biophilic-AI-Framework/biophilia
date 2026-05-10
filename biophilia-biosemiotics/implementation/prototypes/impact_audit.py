@@ -37,3 +37,4 @@ def impact_audit(max_maleficence=0.1, min_synergy=3.0):
             return result
         return wrapper
     return decorator
+ 
