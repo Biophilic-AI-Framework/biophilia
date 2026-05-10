@@ -91,3 +91,4 @@ if __name__ == "__main__":
         "ambient_light": 600.0,
         "mycelium_activity": 0.5
     })
+ 
