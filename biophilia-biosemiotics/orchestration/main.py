@@ -12,6 +12,7 @@ try:
     from entropy_detector import BiophilicEntropyDetector
     from entropy_response import BiophilicResponse
     from homeostasis_controller import HomeostasisController
+    from synergy_logic import SynergyLogic
 except ImportError as e:
     print(f"❌ BIF-Strukturfehler: Module nicht gefunden. Details: {e}")
     sys.exit(1)
