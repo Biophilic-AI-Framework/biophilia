@@ -1,5 +1,6 @@
 import time
 import logging
+import collections
 
 class HomeostasisController:
     """
@@ -7,34 +8,35 @@ class HomeostasisController:
     Er verhindert Oszillationen (das 'Thermostat-Problem') und führt 
     Forest_Node_01 sanft in den Zustand der biophilic_baseline zurück.
     """
+    """
+    Zone C: Bewahrt die Stabilität. 
+    Verhindert Oszillation durch Dämpfung und Trend-Analyse.
+    """
+    def __init__(self, thresholds, history_depth=10):
+        self.warning_threshold = thresholds.get('dissonance_warning', 0.2)
+        self.history = collections.deque(maxlen=history_depth)
+
+    def analyze_trend(self, current_dissonance):
+        """
+        Der Wächter gegen Rauschen. 
+        Gibt True zurück, wenn die Dissonanz stabil über dem Limit liegt.
+        """
+        self.history.append(current_dissonance)
+        
+        if len(self.history) < 3:
+            return False # Nicht genug Daten für eine Trend-Aussage
+            
+        # Berechne gleitenden Durchschnitt
+        avg = sum(self.history) / len(self.history)
+        
+        # Ein Trend gilt als stabil, wenn der Durchschnitt die Warnschwelle reißt
+        return avg >= self.warning_threshold
     
     def __init__(self, baseline_data):
         self.baseline = baseline_data
         self.history = []  # Speichert letzte Korrekturen zur Vermeidung von Oversteer
         self.damping_factor = 0.7  # Biologischer Dämpfungsfaktor (0.1 = sehr langsam, 1.0 = schnell)
         logging.info("HomeostasisController initialisiert. Ziel: Integrität von Forest_Node_01.")
-
-    def calculate_correction(self, current_value, parameter_name):
-        """
-        Berechnet die notwendige Korrektur, um die Baseline wieder zu erreichen,
-        unter Berücksichtigung der Systemträgheit.
-        """
-        target_value = self.baseline.get(parameter_name, {}).get('optimal', None)
-        
-        if target_value is None:
-            logging.warning(f"Kein Baseline-Wert für {parameter_name} gefunden. Keine Korrektur möglich.")
-            return 0
-
-        # Delta: Die Distanz zur Integrität (Wahrheit)
-        delta = target_value - current_value
-        
-        # Verhindern von Oszillation: 
-        # Wenn die letzte Korrektur bereits in die entgegengesetzte Richtung ging,
-        # dämpfen wir die aktuelle Reaktion ab.
-        correction = self._apply_damping(delta, parameter_name)
-        
-        self._log_state(parameter_name, current_value, correction)
-        return correction
 
     def _apply_damping(self, delta, parameter_name):
         """
