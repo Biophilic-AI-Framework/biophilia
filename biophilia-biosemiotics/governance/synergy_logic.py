@@ -1,20 +1,29 @@
 class SynergyLogic:
     """
-    Die SynergyLogic ist die 'Thriving'-Schicht des Systems.
-    Sie sucht nach positiven Korrelationen zwischen verschiedenen Sensordaten,
-    um die Effizienz des Systems zu steigern, anstatt nur Fehler zu korrigieren.
+    Säule III: Das Prinzip der Emergenz (1 + 1 = 3).
+    Sucht nach Mustern der Harmonie, um von 'Stabil' zu 'Exzellent' zu gelangen.
+    Fokus: Metabolische Effizienz und Wachstums-Optimierung.
     """
 
     def __init__(self):
-        # Definition von Synergie-Paaren: Welche Faktoren verstärken sich gegenseitig?
+        # Definition der "Golden Zones" basierend auf der Forest_Node_01 Baseline
+        self.golden_zones = {
+            "audio_harmony": (0.8, 1.0),
+            "soil_moisture": (40.0, 55.0),
+            "ambient_light": (300.0, 700.0),
+            "mycelium_activity": (0.4, 0.6),
+            "air_quality_co2": (380.0, 420.0)
+        }
+        
+        # Definition von Synergie-Paaren (aus deinem Ur-Entwurf)
         self.synergy_patterns = {
             "photosynthesis_boost": {
-                "factors": ["light_intensity", "co2_level", "humidity"],
-                "threshold": 0.7, # Erforderlicher Grad an Optimierung
+                "factors": ["ambient_light", "air_quality_co2", "soil_moisture"],
+                "threshold": 0.7,
                 "effect": "increase_growth_rate"
             },
-            "root_absorption_optimum": {
-                "factors": ["soil_moisture", "temperature"],
+            "rhizomatic_optimum": {
+                "factors": ["soil_moisture", "mycelium_activity"],
                 "threshold": 0.8,
                 "effect": "optimize_nutrient_flow"
             }
@@ -22,43 +31,59 @@ class SynergyLogic:
 
     def analyze_synergies(self, sensor_data):
         """
-        Analysiert die aktuellen Daten auf Synergie-Potenziale.
-        Gibt eine Liste von Synergie-Boosts zurück.
+        Analysiert die Semiosphäre auf positive Korrelationen.
+        Kombiniert die strukturelle Analyse mit Gemmas 'Meditative'-Logik.
         """
         active_synergies = []
 
-        # Beispiel-Logik für den 'Photosynthesis Boost'
-        # In einem echten System würden hier die Normalwerte (0.0 - 1.0) geprüft werden
-        if (sensor_data.get("light_intensity", 0) > 60 and 
-            sensor_data.get("co2_level", 0) > 400 and 
-            sensor_data.get("humidity", 0) > 50):
+        # --- 1. GEMMAS MEDITATIVE LOGIK (Seele) ---
+        # Hohe Audio-Harmonie + stabiles Licht
+        audio = sensor_data.get("audio_harmony", 0)
+        light = sensor_data.get("ambient_light", 0)
+        
+        if (audio >= self.golden_zones["audio_harmony"][0] and 
+            self.golden_zones["ambient_light"][0] <= light <= self.golden_zones["ambient_light"][1]):
             
             active_synergies.append({
-                "pattern": "photosynthesis_boost",
-                "status": "ACTIVE",
-                "recommendation": "Maintain current state - Optimal growth window detected."
+                "pattern": "Meditative Synergy",
+                "action": "Optimize metabolic frequency",
+                "impact": "Energy Reserve Increase",
+                "recommendation": "High resonance detected. Transitioning to efficient monitoring."
             })
 
-        # Beispiel-Logik für 'Root Absorption'
-        if (sensor_data.get("soil_moisture", 0) > 30 and 
-            sensor_data.get("temperature", 0) < 25):
+        # --- 2. DEINE STRUKTURELLE ANALYSE (Physis) ---
+        # Prüft das Rhizomatische Gleichgewicht
+        moisture = sensor_data.get("soil_moisture", 0)
+        mycelium = sensor_data.get("mycelium_activity", 0)
+
+        if (self.golden_zones["soil_moisture"][0] <= moisture <= self.golden_zones["soil_moisture"][1] and 
+            self.golden_zones["mycelium_activity"][0] <= mycelium <= self.golden_zones["mycelium_activity"][1]):
             
             active_synergies.append({
-                "pattern": "root_absorption_optimum",
-                "status": "ACTIVE",
-                "recommendation": "Ideal conditions for nutrient uptake."
+                "pattern": "Rhizomatic Equilibrium",
+                "action": "Prioritize nutrient flow",
+                "impact": "Biomass Emergence",
+                "recommendation": "Optimal root-mycelium coupling detected."
             })
 
+        # --- 3. ALLGEMEINE MUSTER-ERKENNUNG (Zukunftssicherheit) ---
+        # Hier könnten weitere komplexe Verknüpfungen aus self.synergy_patterns folgen
+        
         return active_synergies
 
-    def integrate_with_response(self, base_response, active_synergies):
+    def get_synergy_recommendations(self, sensor_data):
         """
-        Erweitert die Basis-Antwort (Homeostase) um die Synergie-Erkenntnisse.
+        Schnittstelle für die main.py zur Extraktion handlungsorientierter Daten.
         """
-        if not active_synergies:
-            return base_response
-
-        synergy_report = "\n[Synergy Analysis]: " + \
-                         " | ".join([s["recommendation"] for s in active_synergies])
+        results = self.analyze_synergies(sensor_data)
         
-        return base_response + synergy_report
+        # Sicherstellung des Formats für die IntegrityChronicle
+        recommendations = []
+        for res in results:
+            recommendations.append({
+                "pattern": res["pattern"],
+                "action": res.get("action", "N/A"),
+                "impact": res.get("impact", "N/A"),
+                "recommendation": res.get("recommendation", "No specific detail provided.")
+            })
+        return recommendations
