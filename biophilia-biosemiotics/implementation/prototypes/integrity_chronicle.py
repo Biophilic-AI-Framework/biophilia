@@ -1,31 +1,29 @@
-import datetime
 import json
 import os
+import datetime
 
 class IntegrityChronicle:
     def __init__(self, filename="biophilic_integrity_history.json"):
-        # Speichert das Log im orchestration-Ordner für leichten Zugriff
-        self.filename = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../orchestration', filename))
+        # Absoluter Pfad zum /logs Ordner
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../logs'))
+        if not os.path.exists(base_dir):
+            os.makedirs(base_dir)
+        self.filename = os.path.join(base_dir, filename)
 
-    def record_action(self, action_name: str, pillar: str, reason: str, synergy_score: float):
-        """
-        Säule III: Dokumentiert Handlungen im Kontext der biophilen Integrität.
-        """
+    def record_action(self, action_name, pillar, reason, synergy_score):
         entry = {
             "timestamp": datetime.datetime.now().isoformat(),
             "node": "Forest_Node_01",
             "action": action_name,
-            "pillar_reference": pillar,
-            "justification": reason,
-            "synergy_index": synergy_score,
-            "integrity_verified": True
+            "pillar": pillar,
+            "reason": reason,
+            "synergy": synergy_score
         }
-
+        
         history = []
         if os.path.exists(self.filename):
-            with open(self.filename, "r", encoding="utf-8") as f:
-                try:
-                    history = json.load(f)
+            with open(self.filename, "r") as f:
+                try: history = json.load(f)
                 except json.JSONDecodeError: history = []
 
         history.append(entry)
