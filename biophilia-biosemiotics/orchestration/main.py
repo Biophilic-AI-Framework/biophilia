@@ -13,15 +13,15 @@ try:
     from homeostasis_controller import HomeostasisController
     from synergy_logic import SynergyLogic
     from integrity_chronicle import IntegrityChronicle
-    from biophilic_logger import BiophilicLogger # NEU: Der Puls-Wächter
+    from biophilic_logger import BiophilicLogger
 except ImportError as e:
     print(f"❌ BIF-Strukturfehler: Ein Modul wurde nicht gefunden. Details: {e}")
     sys.exit(1)
 
 def run_biophilic_loop(current_sensor_data):
     """
-    Zentralnervensystem des BIF (Forest_Node_01).
-    Verwebt Wahrnehmung (Zone A/B), Governance & Gedächtnis (Zone C).
+    Säule II: Das Zentralnervensystem des BIF.
+    Verwebt Survival (Dissonanz), Stability (Homeostase) und Thriving (Synergie).
     """
     baseline_path = os.path.join(os.path.dirname(__file__), "biophilic_baseline.json")
     
@@ -31,28 +31,30 @@ def run_biophilic_loop(current_sensor_data):
     controller = HomeostasisController(detector.thresholds)
     synergy = SynergyLogic()
     chronicle = IntegrityChronicle(filename="biophilic_integrity_history.json")
-    pulse_logger = BiophilicLogger() # NEU: Initialisierung des Loggers
+    pulse_logger = BiophilicLogger()
 
     print(f"\n--- 🌿 BIF INTEGRITY CYCLE | {time.strftime('%H:%M:%S')} ---")
 
     # 2. Zone A: Sensing (Puls aufzeichnen)
     pulse_logger.log_pulse("Zone A", "Sensing Pulse", current_sensor_data)
 
-    # 3. Zone B: Interpretation der Dissonanz
+    # 3. Zone B: Interpretation (Dissonanz-Check)
     dissonance = detector.calculate_dissonance(current_sensor_data)
     status = detector.get_status(dissonance)
     pulse_logger.log_pulse("Zone B", f"Dissonanz analysiert: {dissonance:.4f} ({status})")
     
-    # 4. Zone C: Governance (Homeostase & Synergie)
+    # 4. Zone C: Governance (Stability vs. Thriving)
     is_stable_threat = controller.analyze_trend(dissonance)
+    
+    # Wir rufen Gemmas neue Empfehlungs-Logik auf
     active_synergies = synergy.analyze_synergies(current_sensor_data)
 
     # 5. Entscheidung & Dokumentation
     if is_stable_threat or status == "CRITICAL_DISSONANCE":
+        # REAKTION: Überleben & Stabilität
         response = responder.resolve(status, dissonance, current_sensor_data)
-        
-        # Protokollierung in Log UND Chronik
         pulse_logger.log_pulse("Zone C", f"INTERVENTION: {response['action']}")
+        
         chronicle.record_action(
             action_name=response['level'],
             pillar="Säule I & II",
@@ -60,25 +62,29 @@ def run_biophilic_loop(current_sensor_data):
             synergy_score=dissonance
         )
     elif active_synergies:
+        # SYNERGIE: Wachstum & Effizienz (Gemma's Thriving-Logik)
         for s in active_synergies:
+            synergy_msg = f"{s['pattern']}: {s['action']} (Impact: {s['impact']})"
+            print(f"✨ {synergy_msg}")
             pulse_logger.log_pulse("Zone C", f"SYNERGY-BOOST: {s['pattern']}")
+            
             chronicle.record_action(
                 action_name=s['pattern'],
                 pillar="Säule III",
-                reason=s['recommendation'],
-                synergy_score=3.0
+                reason=synergy_msg,
+                synergy_score=3.0 # Der Emergenz-Bonus
             )
     else:
-        pulse_logger.log_pulse("Zone C", "Homeostase stabil.")
+        pulse_logger.log_pulse("Zone C", "Passive Homöostase stabil.")
         print(f"INFO: System in Resonanz ({dissonance:.4f}).")
     
     print("------------------------------------------\n")
 
 if __name__ == "__main__":
-    # TEST: Das perfekte Synergie-Fenster (Vogelgezwitscher, Licht & Myzel im Einklang)
+    # TEST: Gemmas "Meditative Synergy" (Vögel singen, Licht ist ideal)
     run_biophilic_loop({
-        "audio_harmony": 0.85,
+        "audio_harmony": 0.9,       # Ideal für Synergie
+        "ambient_light": 450.0,      # In der "Golden Zone"
         "soil_moisture": 50.0,
-        "ambient_light": 650.0,
         "mycelium_activity": 0.5
     })
