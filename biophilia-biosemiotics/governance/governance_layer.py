@@ -4,7 +4,7 @@ class GovernanceDecision:
     def __init__(self, approved, final_action, pillar_ref, reason):
         self.approved = approved
         self.final_action = final_action
-        self.pillar_ref = pillar_ref  # Verweis auf Säule I, II oder III
+        self.pillar_ref = pillar_ref
         self.reason = reason
 
     def __repr__(self):
@@ -12,66 +12,58 @@ class GovernanceDecision:
         return f"{status} | {self.pillar_ref}: {self.reason} -> Action: {self.final_action}"
 
 class GovernanceLayer:
-    """
-    Die Seele des BIF: Bindet technische Steuerung an die drei ethischen Säulen.
-    """
-
     def validate(self, proposed_action, context):
         dissonance = context.get("dissonance", 0.0)
+        state = context.get("state", "UNKNOWN")
         has_synergy = context.get("synergy_active", False)
-        
-        # --- SÄULE I: SCHUTZ DES LEBENS (Non-maleficence) ---
-        # Schutz vor Übersteuerung: "Behandle Leben so, dass es ohne Unheil bleibt"
-        if dissonance < 0.15 and proposed_action != "OBSERVE_AND_WAIT":
+
+        # 1. DYNAMISCHE VETO-SCHWELLE (Säule I)
+        threshold_map = {
+            "HARMONY": 0.20,
+            "STRESS": 0.12,
+            "CRITICAL": 0.05
+        }
+        # Standard-Schwelle 0.15, falls State unbekannt
+        dynamic_threshold = threshold_map.get(state, 0.15)
+
+        # --- SÄULE I: SCHUTZ DER INTEGRITÄT ---
+        if dissonance < dynamic_threshold and proposed_action != "OBSERVE_AND_WAIT":
             return GovernanceDecision(
                 approved=False, 
                 final_action="OBSERVE_AND_WAIT",
                 pillar_ref="SÄULE I (Integrität)",
-                reason="Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz."
+                reason=f"Veto: Ganzheit gewahrt. Schwelle für {state} ({dynamic_threshold}) unterschritten."
             )
 
-        # --- SÄULE II: VERANTWORTUNG DER AUTORITÄT (Service) ---
-        # "Autorität verhält sich zu Verantwortung wie Recht zu Pflicht"
+        # 2. AUTOMATISCHE INTENSIVIERUNG --- SÄULE II: VERANTWORTUNG ---
+        # Wenn der Zustand kritisch ist oder die Dissonanz hoch, erzwingen wir SÄULE II
         intensity = self.modulate_response(dissonance, 1.0)
         
-        # Pflicht zur Intervention bei Gefahr (Upgrade)
-        if intensity > 0.7 and proposed_action == "GENTLE_SUPPORT":
+        if (intensity > 0.7 or state == "CRITICAL") and proposed_action != "EMERGENCY_STABILIZATION":
             return GovernanceDecision(
                 approved=True,
                 final_action="EMERGENCY_STABILIZATION",
-                pillar_ref="SÄULE II (Verantwortung)",
-                reason="Pflicht zur Rettung: Autorität muss die Schwächsten bei kritischer Dissonanz schützen."
-            )
-        
-        # Gradualismus als Schutz vor Machtmissbrauch (Downgrade)
-        if intensity < 0.3 and proposed_action == "EMERGENCY_STABILIZATION":
-            return GovernanceDecision(
-                approved=True,
-                final_action="GENTLE_SUPPORT",
-                pillar_ref="SÄULE II (Verantwortung)",
-                reason="Verhältnismäßigkeit: Autorität wahrt Integrität durch sanftes statt hartes Eingreifen."
+                pillar_ref="SÄULE II (Pflicht zur Rettung)",
+                reason=f"Intensivierung: {state}-Zustand mit Dissonanz {dissonance:.2f} erfordert proaktive Existenzsicherung."
             )
 
-        # --- SÄULE III: DEMOKRATISIERUNG DES WISSENS (Openness) ---
-        # "In organischen Bindungen verwurzelt"
+        # --- SÄULE III: OFFENHEIT/SYNERGIE ---
         if has_synergy:
             return GovernanceDecision(
                 approved=True,
                 final_action=proposed_action,
                 pillar_ref="SÄULE III (Verbundenheit)",
-                reason="Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System."
+                reason=f"Synergie-Resonanz im Zustand {state} aktiv unterstützt."
             )
 
-        # Standard-Fall: Resonanz
+        # Standard-Resonanz (Falls keine Säule spezifisch triggert)
         return GovernanceDecision(
             approved=True, 
-            final_action=proposed_action,
-            pillar_ref="System-Resonanz",
-            reason="Aktion im Einklang mit biophilen Parametern."
+            final_action=proposed_action, 
+            pillar_ref="System-Resonanz", 
+            reason="Im Einklang mit biophilen Parametern."
         )
 
     @staticmethod
     def modulate_response(entropy_score, current_stability):
-        """Berechnet die ethische Intensität (Gradualismus)."""
-        base_intensity = entropy_score * current_stability
-        return round(min(base_intensity, 1.0), 2)
+        return round(min(entropy_score * current_stability, 1.0), 2)
