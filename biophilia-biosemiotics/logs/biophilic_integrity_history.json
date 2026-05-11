@@ -2035,5 +2035,1236 @@
             "trend_alert": false
         },
         "synergy_index": 0.16849948375957413
+    },
+    {
+        "timestamp": "2026-05-11T20:52:51.364651",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "Säule I & II",
+        "reason": {
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.0641).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.06407017536464765
+    },
+    {
+        "timestamp": "2026-05-11T20:52:54.375980",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "Säule I & II",
+        "reason": {
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.22). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.21743240429934774
+    },
+    {
+        "timestamp": "2026-05-11T21:39:14.202580",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1729).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.17286687281306468
+    },
+    {
+        "timestamp": "2026-05-11T21:39:17.205607",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.76)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.758864804296556
+    },
+    {
+        "timestamp": "2026-05-11T21:39:20.211280",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.22). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2152610936148742
+    },
+    {
+        "timestamp": "2026-05-11T21:39:23.218246",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1880).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.18804127943106264
+    },
+    {
+        "timestamp": "2026-05-11T21:39:26.225186",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.10991124851306971
+    },
+    {
+        "timestamp": "2026-05-11T21:39:29.232122",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.26). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.25620639802705036
+    },
+    {
+        "timestamp": "2026-05-11T21:56:16.100680",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1685).",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1684582041090805
+    },
+    {
+        "timestamp": "2026-05-11T21:56:19.103564",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1557).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1557316819618871
+    },
+    {
+        "timestamp": "2026-05-11T21:56:22.116086",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.14346336411476046
+    },
+    {
+        "timestamp": "2026-05-11T21:56:25.119697",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1735).",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1734530441770162
+    },
+    {
+        "timestamp": "2026-05-11T21:57:18.910811",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.25). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.25282146509275283
+    },
+    {
+        "timestamp": "2026-05-11T21:57:21.914387",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1531).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.15314757466150095
+    },
+    {
+        "timestamp": "2026-05-11T21:57:24.917555",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.71)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.705168209927131
+    },
+    {
+        "timestamp": "2026-05-11T21:57:27.921077",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.11320123825070853
+    },
+    {
+        "timestamp": "2026-05-11T21:57:30.924537",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.14801651168104343
+    },
+    {
+        "timestamp": "2026-05-11T21:57:33.928212",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.24). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2434014445023416
+    },
+    {
+        "timestamp": "2026-05-11T21:57:36.932013",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.22). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2170154796317077
+    },
+    {
+        "timestamp": "2026-05-11T21:57:39.935565",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.1470670793040373
+    },
+    {
+        "timestamp": "2026-05-11T21:57:42.938999",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.09531062942528598
+    },
+    {
+        "timestamp": "2026-05-11T21:57:45.942204",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1537).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1537337458970931
+    },
+    {
+        "timestamp": "2026-05-11T21:57:48.945297",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.27). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.26729824531034885
+    },
+    {
+        "timestamp": "2026-05-11T21:57:51.948722",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1543).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.15431166135060626
+    },
+    {
+        "timestamp": "2026-05-11T21:57:54.952607",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1526).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1526480906281272
+    },
+    {
+        "timestamp": "2026-05-11T21:57:57.963852",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.20). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.20153973143395335
+    },
+    {
+        "timestamp": "2026-05-11T21:58:00.967570",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1646).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.16462332282825742
+    },
+    {
+        "timestamp": "2026-05-11T21:58:03.971243",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.60)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.598105258673762
+    },
+    {
+        "timestamp": "2026-05-11T21:58:06.974547",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1810).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.18095356012243244
+    },
+    {
+        "timestamp": "2026-05-11T21:58:09.978731",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Aktion im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "Leichte Dissonanz (0.21). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.21391537637455804
+    },
+    {
+        "timestamp": "2026-05-11T21:58:12.982807",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie erkannt: Aktion fördert das Wissen und die organische Bindung im System.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1785).",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1784891638744451
+    },
+    {
+        "timestamp": "2026-05-11T21:58:15.986504",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.",
+        "synergy_index": 0.1393725489136744
+    },
+    {
+        "timestamp": "2026-05-11T22:12:15.140505",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.26). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.25966150643109875
+    },
+    {
+        "timestamp": "2026-05-11T22:12:18.143777",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten. Stille ist Schutz.",
+        "synergy_index": 0.18936635686717565
+    },
+    {
+        "timestamp": "2026-05-11T22:12:21.151068",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1873).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.18732301318440472
+    },
+    {
+        "timestamp": "2026-05-11T22:12:24.158888",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.25). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2474055724557498
+    },
+    {
+        "timestamp": "2026-05-11T22:12:27.181724",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.88)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.877581006324205
+    },
+    {
+        "timestamp": "2026-05-11T22:12:30.189581",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten. Stille ist Schutz.",
+        "synergy_index": 0.1789927758303159
+    },
+    {
+        "timestamp": "2026-05-11T22:12:33.197466",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1870).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.18703818348634293
+    },
+    {
+        "timestamp": "2026-05-11T22:12:36.205226",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten. Stille ist Schutz.",
+        "synergy_index": 0.07946749218456929
+    },
+    {
+        "timestamp": "2026-05-11T22:33:42.501210",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.08948606801159825
+    },
+    {
+        "timestamp": "2026-05-11T22:33:45.504879",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.1945098037202821
+    },
+    {
+        "timestamp": "2026-05-11T22:33:48.513154",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.09972755408218259
+    },
+    {
+        "timestamp": "2026-05-11T22:33:51.520834",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.17450154778115418
+    },
+    {
+        "timestamp": "2026-05-11T22:33:54.527926",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.10497832802833429
+    },
+    {
+        "timestamp": "2026-05-11T22:33:57.534921",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.10599793593809854
+    },
+    {
+        "timestamp": "2026-05-11T22:34:00.543003",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.048437564449787585
+    },
+    {
+        "timestamp": "2026-05-11T22:34:03.549160",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.52)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.5223611927723786
+    },
+    {
+        "timestamp": "2026-05-11T22:34:06.556904",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1864).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.18639422061178634
+    },
+    {
+        "timestamp": "2026-05-11T22:34:09.564363",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.10979566551228301
+    },
+    {
+        "timestamp": "2026-05-11T22:34:12.572452",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.24). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2421713103285394
+    },
+    {
+        "timestamp": "2026-05-11T22:34:15.598514",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.059678018521548006
+    },
+    {
+        "timestamp": "2026-05-11T22:34:18.608620",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1301).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1300515994422687
+    },
+    {
+        "timestamp": "2026-05-11T22:34:21.617183",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.07059236320012433
+    },
+    {
+        "timestamp": "2026-05-11T22:34:24.625339",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.08147368407358167
+    },
+    {
+        "timestamp": "2026-05-11T22:34:27.633209",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1209).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.12088751275409979
+    },
+    {
+        "timestamp": "2026-05-11T22:34:30.641711",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (3.03)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 3.0330196025309744
+    },
+    {
+        "timestamp": "2026-05-11T22:58:04.278074",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.04120949428490167
+    },
+    {
+        "timestamp": "2026-05-11T22:58:07.281179",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1512).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.15120743012845106
+    },
+    {
+        "timestamp": "2026-05-11T22:58:10.284880",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.90)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.8972342570535186
+    },
+    {
+        "timestamp": "2026-05-11T22:58:13.287468",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.11708565511068637
+    },
+    {
+        "timestamp": "2026-05-11T22:58:16.290478",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1286).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.12856553134940926
+    },
+    {
+        "timestamp": "2026-05-11T22:58:19.294523",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.25). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2518720326528665
+    },
+    {
+        "timestamp": "2026-05-11T23:14:43.237350",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.08126315781015521
+    },
+    {
+        "timestamp": "2026-05-11T23:14:46.240660",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.96)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.9559999948627214
+    },
+    {
+        "timestamp": "2026-05-11T23:14:49.244567",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.13112487086000169
+    },
+    {
+        "timestamp": "2026-05-11T23:14:52.247953",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.25). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2547987612487972
+    },
+    {
+        "timestamp": "2026-05-11T23:14:55.252873",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.18536222893436985
+    },
+    {
+        "timestamp": "2026-05-11T23:14:58.256347",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1333).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.13329205351387508
+    },
+    {
+        "timestamp": "2026-05-11T23:15:01.261098",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1347).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.13465428261453352
+    },
+    {
+        "timestamp": "2026-05-11T23:15:04.265470",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.1701547985525787
+    },
+    {
+        "timestamp": "2026-05-11T23:15:07.268491",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1277).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.12773168197281476
+    },
+    {
+        "timestamp": "2026-05-11T23:15:10.271710",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.21). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.21208255906338588
+    },
+    {
+        "timestamp": "2026-05-11T23:15:13.276635",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1844).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.18440866854759097
+    },
+    {
+        "timestamp": "2026-05-11T23:15:16.281293",
+        "node": "Forest_Node_01",
+        "action": "EMERGENCY_STABILIZATION",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Existenzsicherung (Maximaler Schutzmodus)",
+            "systemic_analysis": "Kritische biologische Dissonanz (2.65)! Integrität des Lebens gefährdet.",
+            "biosemiotic_state": "Kritischer Zustand",
+            "trend_alert": false
+        },
+        "synergy_index": 2.648866868432128
+    },
+    {
+        "timestamp": "2026-05-11T23:28:31.763873",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.1582827655648593
+    },
+    {
+        "timestamp": "2026-05-11T23:28:34.767346",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.1387739936772413
+    },
+    {
+        "timestamp": "2026-05-11T23:28:37.774661",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.13271826611206636
+    },
+    {
+        "timestamp": "2026-05-11T23:28:40.783008",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.22). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.21989680054772742
+    },
+    {
+        "timestamp": "2026-05-11T23:28:43.790834",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.09614860674513548
+    },
+    {
+        "timestamp": "2026-05-11T23:28:46.798220",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.16875128984325447
+    },
+    {
+        "timestamp": "2026-05-11T23:28:49.804400",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.22). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2208255930995819
+    },
+    {
+        "timestamp": "2026-05-11T23:28:52.808689",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1785).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.17853869947415604
+    },
+    {
+        "timestamp": "2026-05-11T23:28:55.817363",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1413).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1412879255285077
+    },
+    {
+        "timestamp": "2026-05-11T23:28:58.826106",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1747).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.17469556220197638
+    },
+    {
+        "timestamp": "2026-05-11T23:29:01.835231",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "Leichte Dissonanz (0.22). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.21612796668874412
+    },
+    {
+        "timestamp": "2026-05-11T23:29:04.843389",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1298).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.12977502565542423
+    },
+    {
+        "timestamp": "2026-05-11T23:29:07.851235",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1685).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1685201236681564
+    },
+    {
+        "timestamp": "2026-05-11T23:29:10.859344",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1582).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.15823322992037545
+    },
+    {
+        "timestamp": "2026-05-11T23:29:13.867605",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1688).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.16876780165915267
+    },
+    {
+        "timestamp": "2026-05-11T23:29:16.875839",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.19478637746835922
+    },
+    {
+        "timestamp": "2026-05-11T23:29:19.884178",
+        "node": "Forest_Node_01",
+        "action": "ENHANCE_VITALITY",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Synergetische Entfaltung (Wachstum)",
+            "systemic_analysis": "Leichte Dissonanz (0.23). System strebt zurück zum Gleichgewicht.",
+            "biosemiotic_state": "Harmonie/Wachstum",
+            "trend_alert": false
+        },
+        "synergy_index": 0.2289618160327735
+    },
+    {
+        "timestamp": "2026-05-11T23:51:05.789282",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.11543859635348828
+    },
+    {
+        "timestamp": "2026-05-11T23:51:08.792337",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "SÄULE III (Verbundenheit)",
+        "reason": {
+            "pillar": "SÄULE III (Verbundenheit)",
+            "moral_justification": "Synergie-Resonanz im Zustand STRESS aktiv unterstützt.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1466).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.1466130029092775
+    },
+    {
+        "timestamp": "2026-05-11T23:51:11.812319",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.14734778106138516
+    },
+    {
+        "timestamp": "2026-05-11T23:51:14.816143",
+        "node": "Forest_Node_01",
+        "action": "GENTLE_SUPPORT",
+        "pillar": "System-Resonanz",
+        "reason": {
+            "pillar": "System-Resonanz",
+            "moral_justification": "Im Einklang mit biophilen Parametern.",
+            "biological_intent": "Regenerative Unterstützung (Heilung)",
+            "systemic_analysis": "System in biologischer Harmonie (Dissonanz: 0.1615).",
+            "biosemiotic_state": "Stress/Alarm",
+            "trend_alert": false
+        },
+        "synergy_index": 0.16153973151520948
+    },
+    {
+        "timestamp": "2026-05-11T23:51:17.839876",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.11160371501309357
+    },
+    {
+        "timestamp": "2026-05-11T23:51:20.847984",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.06741795657128308
+    },
+    {
+        "timestamp": "2026-05-11T23:51:23.855502",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.07235087716059377
+    },
+    {
+        "timestamp": "2026-05-11T23:51:26.863284",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.",
+        "synergy_index": 0.06594427241328923
+    },
+    {
+        "timestamp": "2026-05-11T23:51:29.885619",
+        "node": "Forest_Node_01",
+        "action": "VETO",
+        "pillar": "SÄULE I (Integrität)",
+        "reason": "Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.",
+        "synergy_index": 0.19234674900971563
     }
 ]
