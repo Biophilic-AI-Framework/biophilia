@@ -437,3 +437,320 @@
 2026-05-11 19:09:39,213 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.76, 'soil_moisture': 44.9, 'ambient_light': 436.0, 'mycelium_activity': 0.33}
 2026-05-11 19:09:39,214 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1685 (HARMONY)
 2026-05-11 19:09:39,214 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 20:39:29,194 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.62, 'soil_moisture': 41.7, 'ambient_light': 419.0, 'mycelium_activity': 0.45}
+2026-05-11 20:39:29,194 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2034 (WARNING_DISSONANCE)
+2026-05-11 20:41:16,719 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.8, 'soil_moisture': 51.8, 'ambient_light': 639.0, 'mycelium_activity': 0.62}
+2026-05-11 20:41:16,720 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1187 (HARMONY)
+2026-05-11 20:47:49,454 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.89, 'soil_moisture': 55.7, 'ambient_light': 513.0, 'mycelium_activity': 0.67}
+2026-05-11 20:47:49,454 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1565 (HARMONY)
+2026-05-11 20:49:19,284 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 59.7, 'ambient_light': 469.0, 'mycelium_activity': 0.55}
+2026-05-11 20:49:19,284 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2098 (WARNING_DISSONANCE)
+2026-05-11 20:51:49,500 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.74, 'soil_moisture': 45.8, 'ambient_light': 378.0, 'mycelium_activity': 0.6}
+2026-05-11 20:51:49,501 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1541 (HARMONY)
+2026-05-11 20:52:51,364 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.85, 'soil_moisture': 41.2, 'ambient_light': 482.0, 'mycelium_activity': 0.43}
+2026-05-11 20:52:51,364 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0641 (HARMONY)
+2026-05-11 20:52:51,364 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 20:52:54,367 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.62, 'soil_moisture': 47.1, 'ambient_light': 370.0, 'mycelium_activity': 0.57}
+2026-05-11 20:52:54,367 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2174 (WARNING_DISSONANCE)
+2026-05-11 20:52:54,375 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:17:31,843 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.61, 'soil_moisture': 57.6, 'ambient_light': 545.0, 'mycelium_activity': 0.39}
+2026-05-11 21:17:31,843 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2496 (WARNING_DISSONANCE)
+2026-05-11 21:39:14,202 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.75, 'soil_moisture': 47.1, 'ambient_light': 711.0, 'mycelium_activity': 0.67}
+2026-05-11 21:39:14,202 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1729
+2026-05-11 21:39:14,202 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:39:17,205 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.05, 'soil_moisture': 11.6, 'ambient_light': 103.0, 'mycelium_activity': 4.49}
+2026-05-11 21:39:17,205 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.7589
+2026-05-11 21:39:17,205 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 21:39:20,210 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.66, 'soil_moisture': 45.7, 'ambient_light': 481.0, 'mycelium_activity': 0.65}
+2026-05-11 21:39:20,211 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2153
+2026-05-11 21:39:20,211 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:39:23,217 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.74, 'soil_moisture': 55.5, 'ambient_light': 682.0, 'mycelium_activity': 0.35}
+2026-05-11 21:39:23,218 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1880
+2026-05-11 21:39:23,218 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:39:26,224 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.84, 'soil_moisture': 47.9, 'ambient_light': 594.0, 'mycelium_activity': 0.68}
+2026-05-11 21:39:26,225 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1099
+2026-05-11 21:39:26,225 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 21:39:29,231 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.64, 'soil_moisture': 50.1, 'ambient_light': 797.0, 'mycelium_activity': 0.66}
+2026-05-11 21:39:29,231 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2562
+2026-05-11 21:39:29,232 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:56:16,100 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.7, 'soil_moisture': 48.4, 'ambient_light': 658.0, 'mycelium_activity': 0.39}
+2026-05-11 21:56:16,100 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1685
+2026-05-11 21:56:16,100 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:56:19,103 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.9, 'soil_moisture': 58.5, 'ambient_light': 694.0, 'mycelium_activity': 0.64}
+2026-05-11 21:56:19,103 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1557
+2026-05-11 21:56:19,103 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:56:22,107 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.75, 'soil_moisture': 42.1, 'ambient_light': 748.0, 'mycelium_activity': 0.6}
+2026-05-11 21:56:22,107 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1435
+2026-05-11 21:56:22,107 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 21:56:25,119 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 40.4, 'ambient_light': 526.0, 'mycelium_activity': 0.45}
+2026-05-11 21:56:25,119 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1735
+2026-05-11 21:56:25,119 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:57:18,910 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 50.2, 'ambient_light': 460.0, 'mycelium_activity': 0.68}
+2026-05-11 21:57:18,910 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2528
+2026-05-11 21:57:18,910 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:57:21,914 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.75, 'soil_moisture': 58.2, 'ambient_light': 514.0, 'mycelium_activity': 0.42}
+2026-05-11 21:57:21,914 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1531
+2026-05-11 21:57:21,914 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:57:24,917 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.1, 'soil_moisture': 17.2, 'ambient_light': 78.0, 'mycelium_activity': 4.47}
+2026-05-11 21:57:24,917 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.7052
+2026-05-11 21:57:24,917 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 21:57:27,920 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.76, 'soil_moisture': 43.2, 'ambient_light': 489.0, 'mycelium_activity': 0.57}
+2026-05-11 21:57:27,920 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1132
+2026-05-11 21:57:27,921 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 21:57:30,924 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.84, 'soil_moisture': 54.4, 'ambient_light': 415.0, 'mycelium_activity': 0.67}
+2026-05-11 21:57:30,924 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1480
+2026-05-11 21:57:30,924 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 21:57:33,927 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.66, 'soil_moisture': 49.1, 'ambient_light': 311.0, 'mycelium_activity': 0.64}
+2026-05-11 21:57:33,928 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2434
+2026-05-11 21:57:33,928 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:57:36,931 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.66, 'soil_moisture': 57.2, 'ambient_light': 689.0, 'mycelium_activity': 0.6}
+2026-05-11 21:57:36,931 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2170
+2026-05-11 21:57:36,931 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:57:39,935 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.88, 'soil_moisture': 54.2, 'ambient_light': 356.0, 'mycelium_activity': 0.37}
+2026-05-11 21:57:39,935 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1471
+2026-05-11 21:57:39,935 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 21:57:42,938 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.8, 'soil_moisture': 54.7, 'ambient_light': 523.0, 'mycelium_activity': 0.55}
+2026-05-11 21:57:42,938 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0953
+2026-05-11 21:57:42,938 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 21:57:45,942 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.88, 'soil_moisture': 53.8, 'ambient_light': 637.0, 'mycelium_activity': 0.7}
+2026-05-11 21:57:45,942 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1537
+2026-05-11 21:57:45,942 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:57:48,945 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.68, 'soil_moisture': 58.5, 'ambient_light': 353.0, 'mycelium_activity': 0.67}
+2026-05-11 21:57:48,945 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2673
+2026-05-11 21:57:48,945 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:57:51,948 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.81, 'soil_moisture': 54.3, 'ambient_light': 313.0, 'mycelium_activity': 0.62}
+2026-05-11 21:57:51,948 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1543
+2026-05-11 21:57:51,948 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:57:54,952 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.84, 'soil_moisture': 59.2, 'ambient_light': 722.0, 'mycelium_activity': 0.67}
+2026-05-11 21:57:54,952 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1526
+2026-05-11 21:57:54,952 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:57:57,963 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.64, 'soil_moisture': 52.6, 'ambient_light': 620.0, 'mycelium_activity': 0.59}
+2026-05-11 21:57:57,963 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2015
+2026-05-11 21:57:57,963 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:58:00,967 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.77, 'soil_moisture': 53.3, 'ambient_light': 396.0, 'mycelium_activity': 0.62}
+2026-05-11 21:58:00,967 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1646
+2026-05-11 21:58:00,967 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:58:03,970 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.0, 'soil_moisture': 18.2, 'ambient_light': 137.0, 'mycelium_activity': 4.17}
+2026-05-11 21:58:03,971 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.5981
+2026-05-11 21:58:03,971 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 21:58:06,974 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.74, 'soil_moisture': 53.4, 'ambient_light': 636.0, 'mycelium_activity': 0.34}
+2026-05-11 21:58:06,974 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1810
+2026-05-11 21:58:06,974 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:58:09,978 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.71, 'soil_moisture': 51.9, 'ambient_light': 656.0, 'mycelium_activity': 0.31}
+2026-05-11 21:58:09,978 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.2139
+2026-05-11 21:58:09,978 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 21:58:12,982 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.66, 'soil_moisture': 46.9, 'ambient_light': 733.0, 'mycelium_activity': 0.57}
+2026-05-11 21:58:12,982 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1785
+2026-05-11 21:58:12,982 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 21:58:15,986 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.72, 'soil_moisture': 55.7, 'ambient_light': 768.0, 'mycelium_activity': 0.49}
+2026-05-11 21:58:15,986 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1394
+2026-05-11 21:58:15,986 | INFO | [Zone C] VETO: Eingriff abgelehnt: Die Ganzheit ist nicht verletzt. Stille ist Schutz.
+2026-05-11 22:10:35,867 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.8, 'soil_moisture': 59.7, 'ambient_light': 552.0, 'mycelium_activity': 0.65}
+2026-05-11 22:10:35,867 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1579
+2026-05-11 22:12:15,140 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.63, 'soil_moisture': 56.9, 'ambient_light': 371.0, 'mycelium_activity': 0.61}
+2026-05-11 22:12:15,140 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2597
+2026-05-11 22:12:15,140 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 22:12:18,143 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.66, 'soil_moisture': 50.8, 'ambient_light': 430.0, 'mycelium_activity': 0.44}
+2026-05-11 22:12:18,143 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1894
+2026-05-11 22:12:18,143 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten. Stille ist Schutz.
+2026-05-11 22:12:21,150 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.75, 'soil_moisture': 56.6, 'ambient_light': 501.0, 'mycelium_activity': 0.65}
+2026-05-11 22:12:21,150 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1873
+2026-05-11 22:12:21,151 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:12:24,158 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.7, 'soil_moisture': 59.3, 'ambient_light': 460.0, 'mycelium_activity': 0.32}
+2026-05-11 22:12:24,158 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2474
+2026-05-11 22:12:24,158 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 22:12:27,166 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.02, 'soil_moisture': 14.3, 'ambient_light': 123.0, 'mycelium_activity': 4.7}
+2026-05-11 22:12:27,166 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.8776
+2026-05-11 22:12:27,166 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 22:12:30,189 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.61, 'soil_moisture': 45.1, 'ambient_light': 627.0, 'mycelium_activity': 0.45}
+2026-05-11 22:12:30,189 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1790
+2026-05-11 22:12:30,189 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten. Stille ist Schutz.
+2026-05-11 22:12:33,197 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.71, 'soil_moisture': 59.9, 'ambient_light': 558.0, 'mycelium_activity': 0.4}
+2026-05-11 22:12:33,197 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1870
+2026-05-11 22:12:33,197 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:12:36,204 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.79, 'soil_moisture': 42.2, 'ambient_light': 733.0, 'mycelium_activity': 0.53}
+2026-05-11 22:12:36,205 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0795
+2026-05-11 22:12:36,205 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten. Stille ist Schutz.
+2026-05-11 22:33:42,501 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.8, 'soil_moisture': 49.0, 'ambient_light': 712.0, 'mycelium_activity': 0.56}
+2026-05-11 22:33:42,501 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0895
+2026-05-11 22:33:42,501 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:33:45,504 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.69, 'soil_moisture': 52.5, 'ambient_light': 370.0, 'mycelium_activity': 0.58}
+2026-05-11 22:33:45,504 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1945
+2026-05-11 22:33:45,504 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 22:33:48,512 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.76, 'soil_moisture': 48.4, 'ambient_light': 467.0, 'mycelium_activity': 0.53}
+2026-05-11 22:33:48,512 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0997
+2026-05-11 22:33:48,513 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:33:51,520 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.61, 'soil_moisture': 45.6, 'ambient_light': 660.0, 'mycelium_activity': 0.47}
+2026-05-11 22:33:51,520 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1745
+2026-05-11 22:33:51,520 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 22:33:54,527 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.81, 'soil_moisture': 46.3, 'ambient_light': 733.0, 'mycelium_activity': 0.61}
+2026-05-11 22:33:54,527 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1050
+2026-05-11 22:33:54,527 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:33:57,534 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.87, 'soil_moisture': 55.1, 'ambient_light': 360.0, 'mycelium_activity': 0.44}
+2026-05-11 22:33:57,534 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1060
+2026-05-11 22:33:57,534 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:34:00,542 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.84, 'soil_moisture': 40.3, 'ambient_light': 657.0, 'mycelium_activity': 0.46}
+2026-05-11 22:34:00,542 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0484
+2026-05-11 22:34:00,542 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:34:03,548 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.1, 'soil_moisture': 11.2, 'ambient_light': 113.0, 'mycelium_activity': 4.1}
+2026-05-11 22:34:03,548 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.5224
+2026-05-11 22:34:03,549 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 22:34:06,556 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.76, 'soil_moisture': 51.7, 'ambient_light': 403.0, 'mycelium_activity': 0.66}
+2026-05-11 22:34:06,556 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1864
+2026-05-11 22:34:06,556 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:34:09,563 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.74, 'soil_moisture': 42.9, 'ambient_light': 495.0, 'mycelium_activity': 0.54}
+2026-05-11 22:34:09,564 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1098
+2026-05-11 22:34:09,564 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:34:12,571 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.64, 'soil_moisture': 54.8, 'ambient_light': 678.0, 'mycelium_activity': 0.36}
+2026-05-11 22:34:12,572 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2422
+2026-05-11 22:34:12,572 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 22:34:15,598 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.79, 'soil_moisture': 44.3, 'ambient_light': 709.0, 'mycelium_activity': 0.51}
+2026-05-11 22:34:15,598 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0597
+2026-05-11 22:34:15,598 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:34:18,608 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.84, 'soil_moisture': 57.4, 'ambient_light': 453.0, 'mycelium_activity': 0.37}
+2026-05-11 22:34:18,608 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1301
+2026-05-11 22:34:18,608 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:34:21,616 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.81, 'soil_moisture': 41.5, 'ambient_light': 456.0, 'mycelium_activity': 0.53}
+2026-05-11 22:34:21,616 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0706
+2026-05-11 22:34:21,617 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:34:24,624 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.85, 'soil_moisture': 43.6, 'ambient_light': 535.0, 'mycelium_activity': 0.63}
+2026-05-11 22:34:24,625 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0815
+2026-05-11 22:34:24,625 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:34:27,632 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.78, 'soil_moisture': 45.3, 'ambient_light': 391.0, 'mycelium_activity': 0.59}
+2026-05-11 22:34:27,632 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1209
+2026-05-11 22:34:27,633 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:34:30,641 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.02, 'soil_moisture': 10.4, 'ambient_light': 106.0, 'mycelium_activity': 4.97}
+2026-05-11 22:34:30,641 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 3.0330
+2026-05-11 22:34:30,641 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 22:58:04,277 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.86, 'soil_moisture': 49.3, 'ambient_light': 651.0, 'mycelium_activity': 0.47}
+2026-05-11 22:58:04,278 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0412
+2026-05-11 22:58:04,278 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:58:07,280 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.88, 'soil_moisture': 57.4, 'ambient_light': 578.0, 'mycelium_activity': 0.68}
+2026-05-11 22:58:07,281 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1512
+2026-05-11 22:58:07,281 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:58:10,284 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.06, 'soil_moisture': 12.2, 'ambient_light': 111.0, 'mycelium_activity': 4.77}
+2026-05-11 22:58:10,284 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.8972
+2026-05-11 22:58:10,284 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 22:58:13,287 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.83, 'soil_moisture': 45.2, 'ambient_light': 667.0, 'mycelium_activity': 0.32}
+2026-05-11 22:58:13,287 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1171
+2026-05-11 22:58:13,287 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 22:58:16,290 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.72, 'soil_moisture': 44.9, 'ambient_light': 372.0, 'mycelium_activity': 0.53}
+2026-05-11 22:58:16,290 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1286
+2026-05-11 22:58:16,290 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 22:58:19,294 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.63, 'soil_moisture': 43.9, 'ambient_light': 548.0, 'mycelium_activity': 0.3}
+2026-05-11 22:58:19,294 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2519
+2026-05-11 22:58:19,294 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 23:14:43,237 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.85, 'soil_moisture': 50.3, 'ambient_light': 427.0, 'mycelium_activity': 0.58}
+2026-05-11 23:14:43,237 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0813
+2026-05-11 23:14:43,237 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:14:46,240 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.0, 'soil_moisture': 10.2, 'ambient_light': 72.0, 'mycelium_activity': 4.79}
+2026-05-11 23:14:46,240 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.9560
+2026-05-11 23:14:46,240 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 23:14:49,244 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.7, 'soil_moisture': 42.5, 'ambient_light': 710.0, 'mycelium_activity': 0.53}
+2026-05-11 23:14:49,244 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1311
+2026-05-11 23:14:49,244 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:14:52,247 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.6, 'soil_moisture': 45.5, 'ambient_light': 535.0, 'mycelium_activity': 0.33}
+2026-05-11 23:14:52,247 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2548
+2026-05-11 23:14:52,247 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 23:14:55,252 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.62, 'soil_moisture': 48.1, 'ambient_light': 356.0, 'mycelium_activity': 0.5}
+2026-05-11 23:14:55,252 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1854
+2026-05-11 23:14:55,252 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:14:58,256 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.79, 'soil_moisture': 56.3, 'ambient_light': 516.0, 'mycelium_activity': 0.6}
+2026-05-11 23:14:58,256 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1333
+2026-05-11 23:14:58,256 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:15:01,260 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.73, 'soil_moisture': 55.1, 'ambient_light': 597.0, 'mycelium_activity': 0.56}
+2026-05-11 23:15:01,261 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1347
+2026-05-11 23:15:01,261 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:15:04,265 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 42.3, 'ambient_light': 651.0, 'mycelium_activity': 0.56}
+2026-05-11 23:15:04,265 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1702
+2026-05-11 23:15:04,265 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:15:07,268 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.8, 'soil_moisture': 52.2, 'ambient_light': 658.0, 'mycelium_activity': 0.37}
+2026-05-11 23:15:07,268 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1277
+2026-05-11 23:15:07,268 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:15:10,271 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.63, 'soil_moisture': 44.0, 'ambient_light': 708.0, 'mycelium_activity': 0.61}
+2026-05-11 23:15:10,271 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2121
+2026-05-11 23:15:10,271 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 23:15:13,276 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.73, 'soil_moisture': 58.9, 'ambient_light': 431.0, 'mycelium_activity': 0.41}
+2026-05-11 23:15:13,276 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1844
+2026-05-11 23:15:13,276 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:15:16,281 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.07, 'soil_moisture': 22.4, 'ambient_light': 95.0, 'mycelium_activity': 4.36}
+2026-05-11 23:15:16,281 | INFO | [Zone B] Zustand: Kritischer Zustand | Dissonanz: 2.6489
+2026-05-11 23:15:16,281 | INFO | [Zone C] INTERVENTION: EMERGENCY_STABILIZATION
+2026-05-11 23:28:31,763 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.7, 'soil_moisture': 54.2, 'ambient_light': 657.0, 'mycelium_activity': 0.44}
+2026-05-11 23:28:31,763 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1583
+2026-05-11 23:28:31,763 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:28:34,767 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.7, 'soil_moisture': 52.4, 'ambient_light': 704.0, 'mycelium_activity': 0.52}
+2026-05-11 23:28:34,767 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1388
+2026-05-11 23:28:34,767 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:28:37,774 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.67, 'soil_moisture': 42.8, 'ambient_light': 670.0, 'mycelium_activity': 0.49}
+2026-05-11 23:28:37,774 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1327
+2026-05-11 23:28:37,774 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:28:40,782 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.7, 'soil_moisture': 43.2, 'ambient_light': 331.0, 'mycelium_activity': 0.34}
+2026-05-11 23:28:40,782 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2199
+2026-05-11 23:28:40,782 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 23:28:43,790 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.76, 'soil_moisture': 51.6, 'ambient_light': 444.0, 'mycelium_activity': 0.5}
+2026-05-11 23:28:43,790 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0961
+2026-05-11 23:28:43,790 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:28:46,797 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 56.4, 'ambient_light': 508.0, 'mycelium_activity': 0.5}
+2026-05-11 23:28:46,798 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1688
+2026-05-11 23:28:46,798 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:28:49,804 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.69, 'soil_moisture': 43.0, 'ambient_light': 410.0, 'mycelium_activity': 0.33}
+2026-05-11 23:28:49,804 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2208
+2026-05-11 23:28:49,804 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 23:28:52,808 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.8, 'soil_moisture': 58.5, 'ambient_light': 744.0, 'mycelium_activity': 0.33}
+2026-05-11 23:28:52,808 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1785
+2026-05-11 23:28:52,808 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:28:55,816 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.75, 'soil_moisture': 52.8, 'ambient_light': 528.0, 'mycelium_activity': 0.41}
+2026-05-11 23:28:55,817 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1413
+2026-05-11 23:28:55,817 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:28:58,825 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.79, 'soil_moisture': 40.3, 'ambient_light': 389.0, 'mycelium_activity': 0.32}
+2026-05-11 23:28:58,825 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1747
+2026-05-11 23:28:58,826 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:29:01,834 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.73, 'soil_moisture': 45.6, 'ambient_light': 314.0, 'mycelium_activity': 0.31}
+2026-05-11 23:29:01,835 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.2161
+2026-05-11 23:29:01,835 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:29:04,842 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.71, 'soil_moisture': 49.2, 'ambient_light': 673.0, 'mycelium_activity': 0.54}
+2026-05-11 23:29:04,843 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1298
+2026-05-11 23:29:04,843 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:29:07,850 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.79, 'soil_moisture': 57.4, 'ambient_light': 362.0, 'mycelium_activity': 0.38}
+2026-05-11 23:29:07,851 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1685
+2026-05-11 23:29:07,851 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:29:10,858 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.73, 'soil_moisture': 44.7, 'ambient_light': 742.0, 'mycelium_activity': 0.62}
+2026-05-11 23:29:10,859 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1582
+2026-05-11 23:29:10,859 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:29:13,867 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.89, 'soil_moisture': 58.4, 'ambient_light': 758.0, 'mycelium_activity': 0.34}
+2026-05-11 23:29:13,867 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1688
+2026-05-11 23:29:13,867 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:29:16,875 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 47.6, 'ambient_light': 484.0, 'mycelium_activity': 0.41}
+2026-05-11 23:29:16,875 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1948
+2026-05-11 23:29:16,875 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:29:19,883 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 55.7, 'ambient_light': 685.0, 'mycelium_activity': 0.62}
+2026-05-11 23:29:19,883 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.2290
+2026-05-11 23:29:19,884 | INFO | [Zone C] INTERVENTION: ENHANCE_VITALITY
+2026-05-11 23:51:05,789 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.85, 'soil_moisture': 59.2, 'ambient_light': 549.0, 'mycelium_activity': 0.63}
+2026-05-11 23:51:05,789 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1154
+2026-05-11 23:51:05,789 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:51:08,792 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.84, 'soil_moisture': 51.6, 'ambient_light': 369.0, 'mycelium_activity': 0.67}
+2026-05-11 23:51:08,792 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1466
+2026-05-11 23:51:08,792 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:51:11,812 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.65, 'soil_moisture': 43.0, 'ambient_light': 510.0, 'mycelium_activity': 0.51}
+2026-05-11 23:51:11,812 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1473
+2026-05-11 23:51:11,812 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
+2026-05-11 23:51:14,815 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.81, 'soil_moisture': 59.6, 'ambient_light': 795.0, 'mycelium_activity': 0.63}
+2026-05-11 23:51:14,815 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1615
+2026-05-11 23:51:14,816 | INFO | [Zone C] INTERVENTION: GENTLE_SUPPORT
+2026-05-11 23:51:17,839 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.75, 'soil_moisture': 47.0, 'ambient_light': 614.0, 'mycelium_activity': 0.58}
+2026-05-11 23:51:17,839 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.1116
+2026-05-11 23:51:17,839 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:51:20,847 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.88, 'soil_moisture': 44.6, 'ambient_light': 485.0, 'mycelium_activity': 0.44}
+2026-05-11 23:51:20,847 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0674
+2026-05-11 23:51:20,847 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:51:23,855 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.85, 'soil_moisture': 57.4, 'ambient_light': 755.0, 'mycelium_activity': 0.47}
+2026-05-11 23:51:23,855 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0724
+2026-05-11 23:51:23,855 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:51:26,862 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.82, 'soil_moisture': 46.4, 'ambient_light': 328.0, 'mycelium_activity': 0.51}
+2026-05-11 23:51:26,863 | INFO | [Zone B] Zustand: Stress/Alarm | Dissonanz: 0.0659
+2026-05-11 23:51:26,863 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für STRESS (0.12) unterschritten.
+2026-05-11 23:51:29,885 | INFO | [Zone A] Sensing Pulse | Data: {'audio_harmony': 0.64, 'soil_moisture': 43.2, 'ambient_light': 417.0, 'mycelium_activity': 0.56}
+2026-05-11 23:51:29,885 | INFO | [Zone B] Zustand: Harmonie/Wachstum | Dissonanz: 0.1923
+2026-05-11 23:51:29,885 | INFO | [Zone C] VETO: Veto: Ganzheit gewahrt. Schwelle für HARMONY (0.2) unterschritten.
