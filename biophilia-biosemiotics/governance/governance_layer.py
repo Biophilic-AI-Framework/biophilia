@@ -1,5 +1,7 @@
 # Path: biophilia-biosemiotics/governance/governance_layer.py
 
+from biosemiotic_interpreter import BioState
+
 class GovernanceDecision:
     def __init__(self, approved, final_action, pillar_ref, reason):
         self.approved = approved
@@ -12,58 +14,50 @@ class GovernanceDecision:
         return f"{status} | {self.pillar_ref}: {self.reason} -> Action: {self.final_action}"
 
 class GovernanceLayer:
+    """
+    Säule I, II & III: Die moralische Kontrollinstanz des BIF.
+    Erzwingt Ruhephasen bei geringer Entropie und verhindert Dauer-Eingriffe.
+    """
     def validate(self, proposed_action, context):
         dissonance = context.get("dissonance", 0.0)
-        state = context.get("state", "UNKNOWN")
+        state_name = context.get("state", "HARMONY")
         has_synergy = context.get("synergy_active", False)
+        is_mandatory = context.get("is_mandatory", False)
 
-        # 1. DYNAMISCHE VETO-SCHWELLE (Säule I)
-        threshold_map = {
-            "HARMONY": 0.20,
-            "STRESS": 0.12,
-            "CRITICAL": 0.05
-        }
-        # Standard-Schwelle 0.15, falls State unbekannt
-        dynamic_threshold = threshold_map.get(state, 0.15)
-
-        # --- SÄULE I: SCHUTZ DER INTEGRITÄT ---
-        if dissonance < dynamic_threshold and proposed_action != "OBSERVE_AND_WAIT":
-            return GovernanceDecision(
-                approved=False, 
-                final_action="OBSERVE_AND_WAIT",
-                pillar_ref="SÄULE I (Integrität)",
-                reason=f"Veto: Ganzheit gewahrt. Schwelle für {state} ({dynamic_threshold}) unterschritten."
-            )
-
-        # 2. AUTOMATISCHE INTENSIVIERUNG --- SÄULE II: VERANTWORTUNG ---
-        # Wenn der Zustand kritisch ist oder die Dissonanz hoch, erzwingen wir SÄULE II
-        intensity = self.modulate_response(dissonance, 1.0)
-        
-        if (intensity > 0.7 or state == "CRITICAL") and proposed_action != "EMERGENCY_STABILIZATION":
+        # 1. NOTFALL (Säule II): Höchste Priorität NUR bei echter, unmitigierter Lebensgefahr
+        if is_mandatory or state_name == "CRITICAL":
             return GovernanceDecision(
                 approved=True,
                 final_action="EMERGENCY_STABILIZATION",
                 pillar_ref="SÄULE II (Pflicht zur Rettung)",
-                reason=f"Intensivierung: {state}-Zustand mit Dissonanz {dissonance:.2f} erfordert proaktive Existenzsicherung."
+                reason=f"Kritischer Zustand! Existenzsicherung erzwungen."
             )
 
-        # --- SÄULE III: OFFENHEIT/SYNERGIE ---
-        if has_synergy:
+        # 2. SÄULE I: SÄULE I: Das homöostatische Schutz-Veto gegen Dauer-Aktionismus (Nietzsche-Korrektur)
+        # Wenn die Dissonanz unter der echten Warnschwelle (0.20) liegt, 
+        # wird JEDER künstliche Wachstumsimpuls oder Eingriff unterbunden.
+        if dissonance < 0.20 and proposed_action != "OBSERVE_AND_WAIT":
+            return GovernanceDecision(
+                approved=False,
+                final_action="OBSERVE_AND_WAIT",
+                pillar_ref="SÄULE I (Non-Maleficence)",
+                reason=f"VETO: Dissonanz ({dissonance:.4f}) im absolut gesunden Bereich. System bewahrt respektvolle Zurückhaltung."
+            )
+
+        # 3. SÄULE III: Synergie (Erlaubt kooperatives Wachstum, wenn das System stabil ist)
+        if has_synergy and state_name == "HARMONY":
             return GovernanceDecision(
                 approved=True,
                 final_action=proposed_action,
                 pillar_ref="SÄULE III (Verbundenheit)",
-                reason=f"Synergie-Resonanz im Zustand {state} aktiv unterstützt."
+                reason=f"Emergenz-Prinzip aktiv unterstützt."
             )
 
-        # Standard-Resonanz (Falls keine Säule spezifisch triggert)
+        # 4. Standard-Resonanz
         return GovernanceDecision(
             approved=True, 
             final_action=proposed_action, 
             pillar_ref="System-Resonanz", 
-            reason="Im Einklang mit biophilen Parametern."
+            reason="Aktion entspricht den regulären homöostatischen Leitplanken."
         )
 
-    @staticmethod
-    def modulate_response(entropy_score, current_stability):
-        return round(min(entropy_score * current_stability, 1.0), 2)
