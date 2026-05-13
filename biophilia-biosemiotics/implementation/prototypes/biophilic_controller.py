@@ -1,30 +1,35 @@
+# Import der Enum aus dem Interpreter-Modul
+from biosemiotic_interpreter import BioState
+
 class BiophilicHomeostasisController:
     """
     Säule II: Autorität als Dienst am Leben.
-    Verhindert technokratische Fehlentscheidungen bei Dissonanz.
+    Erzwingt Typsicherheit und kompromisslose Existenzsicherung.
     """
     def __init__(self, interpreter):
         self.interpreter = interpreter
 
-    def determine_action(self, bio_state_name, dissonance_score=0.0):
-        """
-        Ethische Priorisierung unter Berücksichtigung der Entropie.
-        """
-        # SICHERHEITS-CHECK (Säule I): Bei hoher Dissonanz ist VITALIZE verboten!
+    def determine_action(self, bio_state: BioState, dissonance_score: float = 0.0) -> str:
+        # ABSOLUTE EXISTENZSICHERUNG (Säule I & II): Entropie schlägt Label!
         if dissonance_score > 0.3:
-            if bio_state_name == "HARMONY":
-                print("  [VETO] Dissonanz zu hoch für Wachstum. Schalte auf HEAL.")
-                return "GENTLE_SUPPORT"
+            # Bei massiver Dissonanz ist kein Platz für halbe Maßnahmen oder Wachstum
+            print(f"⚠️ [CRITICAL ENTROPY] Score {dissonance_score:.2f} erfordert sofortige Stabilisierung!")
             return "EMERGENCY_STABILIZATION"
 
-        # Reguläre BIF-Logik
-        if bio_state_name == "CRITICAL":
+        # Reguläre, typsichere Kaskade über die Enum
+        if bio_state == BioState.CRITICAL:
             return "EMERGENCY_STABILIZATION"
-        elif bio_state_name == "STRESS":
+            
+        elif bio_state == BioState.STRESS:
             return "GENTLE_SUPPORT"
-        elif bio_state_name == "HARMONY":
+            
+        elif bio_state == BioState.HARMONY:
             return "ENHANCE_VITALITY"
             
+        elif bio_state == BioState.RECOVERY:
+            return "GENTLE_SUPPORT" # Explizite Zuweisung für Erholungsphasen
+            
+        # Bei Dormanz oder unbekannten Zuständen: Respektvolle Zurückhaltung
         return "OBSERVE_AND_WAIT"
 
     def apply_action(self, action_key):
