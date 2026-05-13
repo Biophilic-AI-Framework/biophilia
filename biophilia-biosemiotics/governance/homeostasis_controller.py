@@ -4,65 +4,63 @@ import collections
 
 class HomeostasisController:
     """
-    Der HomeostasisController ist verantwortlich für die Systemstabilität.
-    Er verhindert Oszillationen (das 'Thermostat-Problem') und führt 
-    Forest_Node_01 sanft in den Zustand der biophilic_baseline zurück.
+    Zone C: Bewahrt die Stabilität von Forest_Node_01.
+    Verhindert Oszillaton durch kombinierte Trend- und Dämpfungs-Analyse.
+    Führt biologische Parameter asymptotisch in die Komfortzone zurück.
     """
-    """
-    Zone C: Bewahrt die Stabilität. 
-    Verhindert Oszillation durch Dämpfung und Trend-Analyse.
-    """
-    def __init__(self, thresholds, history_depth=10):
+    def __init__(self, thresholds, baseline_data, history_depth=10):
+        # Fusionierte Attribute: Verhindert den Überschreib-Kollaps
         self.warning_threshold = thresholds.get('dissonance_warning', 0.2)
-        self.history = collections.deque(maxlen=history_depth)
+        self.baseline = baseline_data
+        
+        # Typsichere Historie für die Dissonanz-Entwicklung
+        self.dissonance_history = collections.deque(maxlen=history_depth)
+        
+        # Protokoll-Historie für System-Korrekturen
+        self.correction_history = []  
+        self.damping_factor = 0.7  
+
+        logging.info("🌿 HomeostasisController erfolgreich biophil initialisiert.")
 
     def analyze_trend(self, current_dissonance):
         """
-        Der Wächter gegen Rauschen. 
-        Gibt True zurück, wenn die Dissonanz stabil über dem Limit liegt.
+        Der Wächter gegen Rauschen und plötzliche Schocks.
+        Nutzt Max-Validierung, um akute Bedrohungen nicht wegzuglätten.
         """
-        self.history.append(current_dissonance)
+        self.dissonance_history.append(current_dissonance)
         
-        if len(self.history) < 3:
-            return False # Nicht genug Daten für eine Trend-Aussage
+        if len(self.dissonance_history) < 3:
+            return False 
             
-        # Berechne gleitenden Durchschnitt
-        avg = sum(self.history) / len(self.history)
-        
-        # Ein Trend gilt als stabil, wenn der Durchschnitt die Warnschwelle reißt
+        # SÄULE I: Ein akuter Ausschlag darf niemals weggemittelt werden!
+        # Wenn der aktuelle Wert die Schwelle massiv reißt, schlagen wir sofort Alarm
+        if current_dissonance >= (self.warning_threshold * 1.5):
+            return True
+
+        avg = sum(self.dissonance_history) / len(self.dissonance_history)
         return avg >= self.warning_threshold
     
-    def __init__(self, baseline_data):
-        self.baseline = baseline_data
-        self.history = []  # Speichert letzte Korrekturen zur Vermeidung von Oversteer
-        self.damping_factor = 0.7  # Biologischer Dämpfungsfaktor (0.1 = sehr langsam, 1.0 = schnell)
-        logging.info("HomeostasisController initialisiert. Ziel: Integrität von Forest_Node_01.")
-
-    def _apply_damping(self, delta, parameter_name):
+    def apply_damping(self, delta, parameter_name=None):
         """
-        Implementiert eine einfache biophile Dämpfung.
-        Verhindert, dass das System 'übersteuert'.
+        Asymptotische Annäherung an den Zielzustand. Preventiert Oversteer.
         """
-        # Hier könnte eine PID-Logik implementiert werden, aber für BIF nutzen wir 
-        # eine 'sanfte Annäherung' (Asymptotisches Verhalten).
         return delta * self.damping_factor
 
-    def _log_state(self, param, value, correction):
-        # Speichert den Zustand für die integrity_chronicle.py
-        self.history.append({
+    def log_correction(self, param, value, correction):
+        """Säule III: Erzeugt lückenlose Nachvollziehbarkeit."""
+        self.correction_history.append({
             'timestamp': time.time(),
             'parameter': param,
             'value': value,
             'correction': correction
         })
-        # Begrenzung des Gedächtnisses
-        if len(self.history) > 100:
-            self.history.pop(0)
+        if len(self.correction_history) > 100:
+            self.correction_history.pop(0)
 
     def is_stable(self, current_value, parameter_name, threshold=0.05):
-        """
-        Prüft, ob das System wieder in der 'Ruhephase' der Baseline angekommen ist.
-        """
-        target_value = self.baseline.get(parameter_name, {}).get('optimal', 0)
-        deviation = abs(target_value - current_value) / target_value if target_value != 0 else 0
+        """Prüft die Rückkehr in die homöostatische Ruhephase."""
+        target_value = self.baseline.get(parameter_name, {}).get('ideal', 0)
+        if target_value == 0:
+            return True
+        deviation = abs(target_value - current_value) / target_value
         return deviation <= threshold
