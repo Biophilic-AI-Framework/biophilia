@@ -34,24 +34,28 @@ class BiosemioticInterpreter:
         }
 
     def interpret_mycelium(self, voltage: float, conductivity: float) -> BioSignal:
-        """
-        Säule I: Erkennt Mangel UND toxische Überaktivität.
-        """
-        # FALL 1: KRITISCHER MANGEL
-        if voltage < self.thresholds["mycelium_v_drop"]:
-            return BioSignal(BioState.CRITICAL, intensity=1.0 - voltage, source="Mycelium")
+        max_h = self.thresholds["mycelium_v_max_harmony"]
+        drop_v = self.thresholds["mycelium_v_drop"]
+
+        # FALL 1: KRITISCHER MANGEL (Fließender Übergang gegen 0 Volt)
+        if voltage < drop_v:
+            intensity = (drop_v - voltage) / drop_v
+            return BioSignal(BioState.CRITICAL, intensity=round(intensity, 4), source="Mycelium_Deficit")
+    
+        # FALL 2: TOXISCHE ÜBERAKTIVITÄT (Verhindert das 8.5V Glättungs-Problem)
+        if voltage > max_h:
+            # Exponentieller Anstieg der Kritikalität statt linearer Teiler
+            # Ein Wert von 8.5V führt hier sofort zu einer massiven, nicht-linearen Intensität
+            excess = voltage - max_h
+            intensity = 1.0 - (1.0 / (1.0 + excess)) # Asymptotisch gegen 1.0, aber extrem steil
+            return BioSignal(BioState.CRITICAL, intensity=round(intensity, 4), source="Mycelium_Overload")
+    
+        # FALL 3 & 4: HARMONIE UND ÜBERGANG ZUR DORMANZ
+        if 0.4 < voltage <= max_h:
+            return BioSignal(BioState.HARMONY, intensity=round(voltage / max_h, 4), source="Mycelium")
         
-        # FALL 2: TOXISCHE ÜBERAKTIVITÄT (Dein 8.5 Testwert-Problem)
-        elif voltage > self.thresholds["mycelium_v_max_harmony"]:
-            # Alles über 1.5V wird als Schock/Stress gewertet
-            return BioSignal(BioState.CRITICAL, intensity=min(voltage / 10, 1.0), source="Mycelium_Overload")
-        
-        # FALL 3: GESUNDE HARMONIE
-        elif 0.4 < voltage <= self.thresholds["mycelium_v_max_harmony"]:
-            return BioSignal(BioState.HARMONY, intensity=voltage/1.5, source="Mycelium")
-            
-        # FALL 4: RUHEPHASE
         return BioSignal(BioState.DORMANT, 0.5, "Mycelium")
+
 
     def interpret_acoustics(self, noise: float, variance: float) -> BioSignal:
         # Säule III: Erkennt Stille als Alarmzustand (Vigilanz)
@@ -69,3 +73,4 @@ class BiosemioticInterpreter:
         if BioState.CRITICAL in tokens: return BioState.CRITICAL
         if BioState.STRESS in tokens: return BioState.STRESS
         return BioState.HARMONY
+        
