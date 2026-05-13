@@ -1,6 +1,5 @@
 import functools
 import logging
-import os
 from datetime import datetime
 
 class BiophilicAuditError(PermissionError):
@@ -9,32 +8,39 @@ class BiophilicAuditError(PermissionError):
 
 def impact_audit(max_maleficence=0.1, min_synergy=3.0):
     """
-    Säule I & II: Erzwingt die intellektuelle Durchdringung vor jeder Handlung.
-    Verhindert blinde Impulse und wahrt die Integrität des Lebens.
+    Säule I & II: Erzwingt die autonome Konsequenzen-Prüfung vor jeder Tat.
+    Verhindert, dass Funktionen ihre eigene Harmlosigkeit vortäuschen.
     """
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
-            # 1. Konsequenzen-Analyse (Simulation der Noosphäre)
-            # In einer fortgeschrittenen Stufe greift dies auf die SynergyLogic zu
-            maleficence_score = kwargs.get('maleficence', 0.0) 
-            synergy_score = kwargs.get('synergy', 3.0)
+            # SÄULE I: Autonome Schadens-Ermittlung statt blindem Vertrauen
+            # Wir holen uns den realen Zustand des Systems aus den globalen Instanzen
+            from main import DETECTOR, SYNERGY_ENGINE
+            
+            # Das Audit nutzt den aktuellen Entropie-Score als inhärenten Maleficence-Indikator
+            # Wenn das Gesamtsystem bereits kollabiert, ist jeder unüberlegte Eingriff potenziell schädlich
+            current_dissonance = getattr(DETECTOR, 'last_calculated_dissonance', 0.0)
+            
+            # Schadenspotenzial berechnet sich aus dem Systemstress PLUS riskanten Parametern
+            calculated_maleficence = current_dissonance * 0.5
+            
+            # Falls die Funktion explizit destruktiv deklariert ist, schlägt das oben drauf
+            explicit_maleficence = kwargs.get('maleficence', 0.0)
+            total_maleficence = max(calculated_maleficence, explicit_maleficence)
 
-            # 2. Veto-Logik (Säule I: Non-Maleficence)
-            if maleficence_score > max_maleficence:
-                error_msg = f"VETO: '{func.__name__}' verweigert. Unheil-Faktor ({maleficence_score}) überschreitet Schutzlimit."
-                logging.error(f"🚨 {error_msg}")
-                # Hier könnte ein automatischer Eintrag in die Chronik erfolgen
+            # 2. Unbeugsames Veto (Säule I)
+            if total_maleficence > max_maleficence:
+                error_msg = (
+                    f"🛑 AUDIT-VETO: '{func.__name__}' blockiert! "
+                    f"Berechneter Unheil-Faktor ({total_maleficence:.2f}) überschreitet Limit ({max_maleficence})."
+                )
+                logging.error(error_msg)
                 raise BiophilicAuditError(error_msg)
 
-            # 3. Synergie-Prüfung (Säule II: 1+1=3)
-            if synergy_score < min_synergy:
-                logging.warning(f"⚠️ HINWEIS: '{func.__name__}' ausgeführt, aber Synergie-Potenzial ({synergy_score}) ist gering.")
-
-            # 4. Transparente Ausführung (Säule III)
+            # 3. Transparente Ausführung
             result = func(*args, **kwargs)
-            logging.info(f"✅ EXEC: '{func.__name__}' erfolgreich validiert und ausgeführt.")
+            logging.info(f"✅ AUDIT PASSED: '{func.__name__}' im Einklang mit dem Schutz des Lebens ausgeführt.")
             return result
         return wrapper
     return decorator
- 
