@@ -16,7 +16,8 @@ class GovernanceDecision:
 class GovernanceLayer:
     """
     Säule I, II & III: Die moralische Kontrollinstanz des BIF.
-    Erzwingt Ruhephasen bei geringer Entropie und verhindert Dauer-Eingriffe.
+    Nimmt das dynamische Toleranz-Mapping wieder auf, um blinden Aktionismus
+    situationsbedingt und unerbittlich per Veto abzufedern.
     """
     def validate(self, proposed_action, context):
         dissonance = context.get("dissonance", 0.0)
@@ -24,40 +25,59 @@ class GovernanceLayer:
         has_synergy = context.get("synergy_active", False)
         is_mandatory = context.get("is_mandatory", False)
 
-        # 1. NOTFALL (Säule II): Höchste Priorität NUR bei echter, unmitigierter Lebensgefahr
+        # =====================================================================
+        # 1. DYNAMISCHE VETO-SCHWELLE (Säule I - Reaktiviert & Harmonisiert)
+        # =====================================================================
+        # Das Mapping definiert das exakte Dissonanz-Fenster, unterhalb dessen 
+        # künstliche Eingriffe rigoros als "unüberlegt" verboten werden.
+        threshold_map = {
+            "HARMONY": 0.20,  # Im Frieden tolerieren wir Rauschen, verbieten aber Aktionismus
+            "STRESS": 0.35,   # Unter Stress erhöht sich der Schutzraum, um Übersteuerungen zu blockieren
+            "CRITICAL": 0.99  # In der absoluten Krise schlägt der Notfalldurchgriff an
+        }
+        dynamic_threshold = threshold_map.get(state_name, 0.20)
+
+        # =====================================================================
+        # 2. NOTFALL-DURCHGRIFF (Säule II)
+        # =====================================================================
+        # Höchste Priorität: Wenn das nackte Überleben auf dem Spiel steht (Event-Injektion)
         if is_mandatory or state_name == "CRITICAL":
             return GovernanceDecision(
                 approved=True,
                 final_action="EMERGENCY_STABILIZATION",
                 pillar_ref="SÄULE II (Pflicht zur Rettung)",
-                reason=f"Kritischer Zustand! Existenzsicherung erzwungen."
+                reason=f"Kritischer Zustand! Existenzsicherung absolut erzwungen."
             )
 
-        # 2. SÄULE I: SÄULE I: Das homöostatische Schutz-Veto gegen Dauer-Aktionismus (Nietzsche-Korrektur)
-        # Wenn die Dissonanz unter der echten Warnschwelle (0.20) liegt, 
-        # wird JEDER künstliche Wachstumsimpuls oder Eingriff unterbunden.
-        if dissonance < 0.20 and proposed_action != "OBSERVE_AND_WAIT":
+        # =====================================================================
+        # 3. SÄULE I: Das dynamische homöostatische Schutz-Veto (Nietzsche-Korrektur)
+        # =====================================================================
+        # Wenn die aktuelle Dissonanz die dynamische Schwelle des jeweiligen Zustands 
+        # UNTERSCHREITET, greift der Schutz des Lebens vor technischer Reizüberflutung.
+        if dissonance < dynamic_threshold and proposed_action != "OBSERVE_AND_WAIT":
             return GovernanceDecision(
                 approved=False,
                 final_action="OBSERVE_AND_WAIT",
                 pillar_ref="SÄULE I (Non-Maleficence)",
-                reason=f"VETO: Dissonanz ({dissonance:.4f}) im absolut gesunden Bereich. System bewahrt respektvolle Zurückhaltung."
+                reason=f"VETO: Dissonanz ({dissonance:.4f}) liegt unter der Schutzschwelle von {dynamic_threshold:.2f} für {state_name}. Eingriff verweigert."
             )
 
-        # 3. SÄULE III: Synergie (Erlaubt kooperatives Wachstum, wenn das System stabil ist)
+        # =====================================================================
+        # 4. SÄULE III: Offenheit & Synergie-Resonanz
+        # =====================================================================
+        # Erlaubt kooperatives Wachstum nur, wenn das System die Veto-Hürde gemeistert hat
         if has_synergy and state_name == "HARMONY":
             return GovernanceDecision(
                 approved=True,
                 final_action=proposed_action,
                 pillar_ref="SÄULE III (Verbundenheit)",
-                reason=f"Emergenz-Prinzip aktiv unterstützt."
+                reason=f"Emergenz-Prinzip (1+1=3) aktiv unterstützt."
             )
 
-        # 4. Standard-Resonanz
+        # 5. Standard-Resonanz
         return GovernanceDecision(
             approved=True, 
             final_action=proposed_action, 
             pillar_ref="System-Resonanz", 
             reason="Aktion entspricht den regulären homöostatischen Leitplanken."
         )
-
