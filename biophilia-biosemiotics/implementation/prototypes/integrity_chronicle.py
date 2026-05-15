@@ -16,19 +16,19 @@ class IntegrityChronicle:
         entry_string = json.dumps(entry_dict, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(entry_string.encode('utf-8')).hexdigest()
 
-    def record_action(self, action_name, pillar, reason, synergy_score):
+    def record_action(self, node_name, action_name, pillar, reason, synergy_score):
         """
         Säule III: Bewahrt die unmanipulierbare Wahrheit der Entscheidungskette.
         Verkettet Einträge kryptografisch über Hashes (Blockchain-Prinzip).
+        Bewahrt zusätzlich die unmanipulierbare Wahrheit der Entscheidungskette.
+        Akzeptiert den Knotennamen dynamisch, um verteilte Identitäten korrekt zu loggen.
         """
         # 1. Vorhandene Historie laden
         history = []
         if os.path.exists(self.filename):
             with open(self.filename, "r", encoding="utf-8") as f:
-                try: 
-                    history = json.load(f)
-                except (json.JSONDecodeError, FileNotFoundError): 
-                    history = []
+                try: history = json.load(f)
+                except (json.JSONDecodeError, FileNotFoundError): history = []
 
         # 2. Den Hash des direkt vorherigen Eintrags ermitteln
         # Falls die Chronik leer ist (Erstart), nutzen wir einen "Genesis-Hash"
@@ -37,15 +37,15 @@ class IntegrityChronicle:
         # 3. Den neuen Eintrag vorbereiten (Zunächst ohne den eigenen Hash)
         entry = {
             "timestamp": datetime.datetime.now().isoformat(),
-            "node": "Forest_Node_01",
+            "node": node_name,  # ← JETZT DYNAMISCH UND WAHRHAFTIG!
             "action": action_name,
             "pillar": pillar,
             "reason": reason,
             "synergy_index": float(synergy_score),
             "previous_hash": previous_hash
         }
-        
-        # 4. Den kryptografischen Fingerabdruck für DIESEN Eintrag berechnen und anfügen
+
+        # 4. Den kryptografischen Fingerabdruck für DIESEN Eintrag berechnen und anfügen        
         entry["current_hash"] = self._calculate_hash(entry)
 
         # 5. In die Historie einfügen und wegschreiben
