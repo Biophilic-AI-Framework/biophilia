@@ -1,41 +1,45 @@
 import json
 
 class BiophilicEntropyDetector:
-    """
-    Säule I: Bewahrt die Ganzheitlichkeit des Lebens.
-    Erlaubt organisches Atmen (Toleranzkorridor) und blockiert tech-bedingte Hyperaktivität.
-    """
     def __init__(self, baseline_path):
         with open(baseline_path, 'r') as f:
             self.config = json.load(f)
-        self.baseline = self.config['baseline']
-        self.thresholds = self.config['thresholds']
+        
+        # SÄULE I: Akzeptiert die neue Netzwerk-Matrix schadenfrei
+        # Falls die alte Struktur geladen wird, greift ein sicherer Fallback
+        if 'nodes' in self.config:
+            self.nodes_matrix = self.config['nodes']
+        else:
+            # Abwärtskompatibilität, falls die flache JSON genutzt wird
+            self.nodes_matrix = {
+                "Forest_Node_01": {
+                    "baseline": self.config.get('baseline', {}),
+                    "thresholds": self.config.get('thresholds', {})
+                }
+            }
         self.last_calculated_dissonance = 0.0
 
-    def calculate_dissonance(self, current_sensors):
-        """
-        Berechnet die gewichtete Dissonanz mit biologischer Totzone (Deadzone)
-        und asymptotischem Maximum-Schutz bei echten Krisen.
-        """
+
+    def calculate_dissonance(self, node_name, current_sensors):
+        """Berechnet die Dissonanz spezifisch für den jeweiligen Knoten."""
+        # Hole die spezifische Baseline des Knotens, falls nicht vorhanden Fallback auf Node_01
+        node_config = self.nodes_matrix.get(node_name, self.nodes_matrix["Forest_Node_01"])
+        baseline = node_config['baseline']
+        
         total_deviation = 0.0
         total_weight = 0.0
         max_single_deviation = 0.0
 
         for sensor, value in current_sensors.items():
-            if sensor in self.baseline:
-                ideal = self.baseline[sensor]['ideal']
-                weight = self.baseline[sensor]['weight']
+            if sensor in baseline:
+                ideal = baseline[sensor]['ideal']
+                weight = baseline[sensor]['weight']
                 
-                # Relative Abweichung berechnen
                 raw_deviation = abs(value - ideal) / (ideal + 1e-9)
                 
-                # SÄULE I: Organischer Pufferkorridor (Deadzone)
-                # Reduziert von 12% auf 5%. Kleine Schwankungen bis 5% sind Grundrauschen.
-                # Alles darüber atmet fließend und wird feinfühlig erfasst.
                 if raw_deviation <= 0.05:
                     deviation = 0.0
                 else:
-                    # Lineare Skalierung direkt ab der feinen Toleranzgrenze
                     deviation = raw_deviation - 0.05
                 
                 weighted_deviation = deviation * weight
@@ -45,12 +49,8 @@ class BiophilicEntropyDetector:
                 if weighted_deviation > max_single_deviation:
                     max_single_deviation = weighted_deviation
 
-        # Arithmetischer Teilschnitt
         avg_dissonance = total_deviation / total_weight if total_weight > 0 else 0.0
         
-        # SÄULE I: Dynamischer Schutz
-        # Der Maximum-Verstärker greift erst ein, wenn eine gewichtete Einzelabweichung 
-        # die Warnschwelle (0.20) signifikant überschreitet.
         if max_single_deviation > 0.25:
             final_dissonance = max(avg_dissonance, max_single_deviation * 0.8)
         else:
@@ -59,9 +59,12 @@ class BiophilicEntropyDetector:
         self.last_calculated_dissonance = round(final_dissonance, 4)
         return self.last_calculated_dissonance
 
-    def get_status(self, dissonance):
-        if dissonance >= self.thresholds['dissonance_critical']:
+    def get_status(self, node_name, dissonance):
+        node_config = self.nodes_matrix.get(node_name, self.nodes_matrix["Forest_Node_01"])
+        thresholds = node_config['thresholds']
+        
+        if dissonance >= thresholds['dissonance_critical']:
             return "CRITICAL_DISSONANCE"
-        elif dissonance >= self.thresholds['dissonance_warning']:
+        elif dissonance >= thresholds['dissonance_warning']:
             return "WARNING_DISSONANCE"
         return "HARMONY"
