@@ -40,8 +40,6 @@ HOMEOSTASIS_WATCHER = HomeostasisController(
     baseline_data=DETECTOR.baseline
 )
 # 3. Restliche Organe instanziieren
-BASELINE_PATH = os.path.join(os.path.dirname(__file__), "bio_data/biophilic_baseline.json")
-DETECTOR = BiophilicEntropyDetector(BASELINE_PATH)
 # Wir übergeben dem Responder den Detektor, damit er Zugriff auf die Baseline-Gewichtung hat:
 RESPONDER = BiophilicResponse(detector_ref=DETECTOR)
 INTERPRETER = BiosemioticInterpreter()
