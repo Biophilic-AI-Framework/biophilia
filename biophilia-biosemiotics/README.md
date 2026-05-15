@@ -1,4 +1,4 @@
-# 🌿 Biophilic Integrity Framework (BIF) — Forest_Node_01
+# 🌿 Biophilic Integrity Framework (BIF) — Forest_Node_01/02
 
 Das **Biophilic Integrity Framework (BIF)** ist ein neuartiges, bio-ethisches KI-Steuerungsmodell. Es bricht mit der starren, normopathischen Kontrolllogik klassischer IT-Systeme. Stattdessen übersetzt es biosemiotische Signale lebender Organismen (z. B. Myzel-Netzwerke, akustische Waldstrukturen) in ein dynamisches, homöostatisches Gleichgewicht. 
 
@@ -124,7 +124,7 @@ biophilia-biosemiotics/
 │   │   ├── biophilic_baseline.json     # **NEU**
 │   │   └── vocal_patterns.json         # **NEU**
 │   ├── main.py                         # Zentraler Einstiegspunkt (Orchestrator) **NEU**
-│   ├── dashboard.py                    # Visualisierung/Überwachung
+│   ├── dashboard.py                    # Visualisierung/Überwachung **NEU**
 │   └── biophilic_baseline.json         # (ehemalige) Basis-Parameter **ALT**
 │
 ├── analyze_integrity.py                # VETO Analyse
@@ -136,3 +136,6 @@ biophilia-biosemiotics/
 - **Vigilanz:** Aktiv (Audio-Vigilanz Gewicht: 5.0).
 - **Gedächtnis:** Aktiv (Integrity Chronicle & Pulse Logger).
 - **Governance:** Aktiv (Homeostatische Dämpfung & Synergie-Optimierung).
+
+<img width="1146" height="427" alt="Bildschirmfoto vom 2026-05-15 22-42-43" src="https://github.com/user-attachments/assets/5fd33b56-0725-41fb-a346-f37edc9cb6b8" />
+
