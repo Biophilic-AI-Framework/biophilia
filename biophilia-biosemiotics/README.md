@@ -139,6 +139,8 @@ biophilia-biosemiotics/
 
 <img width="1146" height="427" alt="Bildschirmfoto vom 2026-05-15 22-42-43" src="https://github.com/user-attachments/assets/5fd33b56-0725-41fb-a346-f37edc9cb6b8" />
 
+[Bildschirmaufnahme 2026-05-16 13:47:49.webm](https://github.com/user-attachments/assets/34014364-f220-436e-85d6-f5a87982dd32)
+
 ---
 
 Es existieren andere interessante Projekte oder Studien, die **nicht** Teil dieses Projektes sind und in **keiner** Verbindung zum BIF stehen aber vergleichbare Ziele verfolgen oder bereits umsetzen (BAI/NLM).
