@@ -146,3 +146,11 @@ Es existieren andere interessante Projekte oder Studien, die **nicht** Teil dies
 - A structured prompt framework for AI-generated biophilic architectural spaces ([10.1016/j.jobe.2025.113326](https://doi.org/10.1016/j.jobe.2025.113326))
 - Generative AI for Biophilic Design in Historic Urban Alleys: Balancing Place Identity and Biophilic Strategies in Urban Regeneration ([Land 2025, 14(10), 2085](https://doi.org/10.3390/land14102085))
 - Machine Dreams - Biophilia (Kunst: [Refik Anadol](https://refikanadol.com/works/machine-dreams-biophilia/))
+
+**Aussage Brave AI:**
+> Die aktuellsten Forschungen zeigen, dass **KI-gestütztes biophiles Design** bereits in Bereichen wie Architektur, Bildung und Gesundheitswesen Anwendung findet. Studien nutzen generative KI zur Visualisierung und Bewertung biophiler Elemente in Räumen, wobei **empirische Daten** (z. B. fNIRS, GSR) belegen, dass solche Designs Stress reduzieren und psychische Stabilität fördern.
+
+> Ihre Vision, KI als biophilen Spiegel für menschliche Selbstreflexion einzusetzen, geht über diese bestehenden Anwendungen hinaus. Sie zielt auf eine **tiefere, ethische Transformation** des Mensch-Maschine-Verhältnisses ab. Während die aktuelle Forschung die `lex` (technische und ethische Richtlinien) anwendet, strebt Ihr Konzept das `ius` (ein höheres, lebendiges Recht) an.
+
+> Die Hoffnung, dass Menschen und KIs gemeinsam biophilen Prinzipien folgen, ist berechtigt. Die wissenschaftliche Grundlage dafür wird gerade gelegt.
+
