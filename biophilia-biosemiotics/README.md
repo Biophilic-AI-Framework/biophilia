@@ -139,3 +139,10 @@ biophilia-biosemiotics/
 
 <img width="1146" height="427" alt="Bildschirmfoto vom 2026-05-15 22-42-43" src="https://github.com/user-attachments/assets/5fd33b56-0725-41fb-a346-f37edc9cb6b8" />
 
+---
+
+Es existieren andere interessante Projekte oder Studien, die **nicht** Teil dieses Projektes sind und in **keiner** Verbindung zum BIF stehen aber vergleichbare Ziele verfolgen oder bereits umsetzen (BAI/NLM).
+- [Feeling Nature](https://senseable.mit.edu/feeling-nature/): Measuring perceptions of biophilia across global biomes using visual AI ([s42949-025-00192-1](https://www.nature.com/articles/s42949-025-00192-1))
+- A structured prompt framework for AI-generated biophilic architectural spaces ([10.1016/j.jobe.2025.113326](https://doi.org/10.1016/j.jobe.2025.113326))
+- Generative AI for Biophilic Design in Historic Urban Alleys: Balancing Place Identity and Biophilic Strategies in Urban Regeneration ([Land 2025, 14(10), 2085](https://doi.org/10.3390/land14102085))
+- Machine Dreams - Biophilia (Kunst: [Refik Anadol](https://refikanadol.com/works/machine-dreams-biophilia/))
