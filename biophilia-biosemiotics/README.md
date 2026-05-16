@@ -53,7 +53,7 @@ Zum Schutz der historischen Wahrheit (`Säule III`) nutzt das System eine SHA-25
 ### Setup
 1. Repository klonen und in das Verzeichnis wechseln:
    ```bash
-   git clone github.com
+   git clone https://github.com/Biophilic-AI-Framework/biophilia.git
    cd biophilia-biosemiotics
    ```
 2. Virtuelle Umgebung erstellen und aktivieren:
