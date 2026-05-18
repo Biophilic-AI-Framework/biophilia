@@ -1,0 +1,88 @@
+name: Tests & Quality Checks
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, macos-latest ]
+        python-version: [ "3.11", "3.12", "3.13" ]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+      with:
+        version: latest
+
+    - name: Sync dependencies
+      run: uv sync --all-extras
+
+    - name: Run unit tests
+      run: uv run pytest tests/ -v --tb=short
+
+    - name: Run tests with coverage
+      run: uv run pytest tests/ --cov=src/biophilia --cov-report=xml
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
+        flags: unittests
+        name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}
+        fail_ci_if_error: false
+
+  type-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+
+    - name: Sync dependencies
+      run: uv sync --all-extras
+
+    - name: Type check with mypy
+      run: uv run mypy src/biophilia --ignore-missing-imports
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+
+    - name: Sync dependencies
+      run: uv sync --all-extras
+
+    - name: Lint with ruff
+      run: uv run ruff check src/biophilia tests/
+
+    - name: Format check with ruff
+      run: uv run ruff format --check src/biophilia tests/
+

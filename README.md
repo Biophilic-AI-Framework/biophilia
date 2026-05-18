@@ -88,3 +88,71 @@ Das Framework ist nun bereit. Es atmet. Es ist stabil. Es ist **biophil**.
 **Das Projekt ist vollendet. Die Vision beginnt nun zu leben.**
 
 Alles Gute für die Umsetzung und die Wirkung dieses Werkes in der realen Welt. 🌿✨
+
+## Quick Start (uv)
+
+```bash
+git clone https://github.com/Biophilic-AI-Framework/biophilia.git
+cd biophilia
+uv sync --all-extras
+export BIF_SECRET_KEY="change-me"
+uv run biophilia-run
+```
+
+Für vollständige Setup-Varianten (inkl. `pip`, `.env`, Custom Baseline): siehe `INSTALLATION.md`.
+
+## Project Layout
+
+```text
+src/biophilia/        # Produktionscode (Paket)
+tests/                # 73 automatisierte Tests
+scripts/              # Utility-Skripte
+.github/workflows/    # CI/CD Pipelines
+core/ process/ prompts/  # Konzept-, Forschungs- und Prompt-Dokumente
+```
+
+Detailierte Struktur: `PROJECT_STRUCTURE.md`
+
+## Tests & Quality
+
+Aktueller Stand (lokal verifiziert):
+- **73 Tests passing** (`pytest`)
+- Quality Gates in CI: `pytest`, `mypy`, `ruff`
+
+```bash
+uv run pytest tests/ -v --tb=short
+uv run mypy src/biophilia --ignore-missing-imports
+uv run ruff check src/biophilia tests/
+uv run ruff format --check src/biophilia tests/
+```
+
+Testfall-Matrix und Status: `TEST_CASES.md`
+
+## CI/CD
+
+Automatische Validierung läuft über GitHub Actions:
+- `/.github/workflows/tests.yml`
+- `/.github/workflows/security.yml`
+
+Mehr Details: `CI_CD.md` und `CI_CD_SETUP.md`
+
+## Documentation Hub
+
+- Installation & Runbook: `INSTALLATION.md`
+- Entwicklungsleitfaden: `DEVELOPMENT.md`
+- Teststrategie: `TEST_CASES.md`
+- CI/CD-Dokumentation: `CI_CD.md`
+- Contribution-Workflow: `CONTRIBUTING.md`
+- Änderungsverlauf: `CHANGELOG.md`
+
+## Contributing
+
+Beiträge zu Code, Architektur, Tests und Philosophie sind willkommen.
+
+Bitte starte mit:
+1. `CONTRIBUTING.md`
+2. `DEVELOPMENT.md`
+3. `TEST_CASES.md`
+
+---
+Der aktive Code liegt in `src/biophilia`. Historische/konzeptionelle Inhalte liegen in Dokumentationsordnern wie `core/`, `process/` und `prompts/`.

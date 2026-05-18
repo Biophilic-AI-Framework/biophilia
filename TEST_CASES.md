@@ -1,122 +1,170 @@
 # Test Cases for Project Biophilia
 
 ## Overview
-This document outlines the test cases for the Biophilia project. These tests cover core functionality, integration points, and edge cases.
+Dieses Dokument beschreibt den aktuellen Test- und Qualitätsstand des Projekts auf Basis der real vorhandenen Tests in `tests/`, der Toolchain in `pyproject.toml` und der CI-Pipeline in `.github/workflows/tests.yml`.
+
+## Status-Skala
+- `Automated`: Testfall ist als automatisierter Test implementiert.
+- `In CI`: Testfall läuft in GitHub Actions.
+- `Planned`: Geplant, aber noch nicht automatisiert.
+
+## Current Snapshot (verifiziert)
+- Letzter lokaler Lauf: `73 passed` (`uv run pytest tests/ -q`)
+- Testframework: `pytest`
+- Scope: `tests/test_*.py`
+- Quality Gates in CI: `pytest`, `mypy`, `ruff`
 
 ## Test Categories
 
-### 1. Unit Tests
+### 1. Unit Tests (Automated + In CI)
 
-#### 1.1 Core Module Tests
+#### 1.1 Integrity & Audit
 - **Test ID:** TC-001
-- **Description:** Verify core module initialization
-- **Expected Result:** Module initializes without errors
-- **Status:** Pending
+- **Module:** `tests/test_chronicle.py`
+- **Description:** Hash-Chain-Integrität, Record-Verkettung, Manipulationserkennung
+- **Expected Result:** Manipulation wird erkannt, intakte Kette validiert erfolgreich
+- **Status:** Automated, In CI
 
+#### 1.2 Entropy Detection
 - **Test ID:** TC-002
-- **Description:** Test core functions with valid inputs
-- **Expected Result:** Functions return expected outputs
-- **Status:** Pending
+- **Module:** `tests/test_entropy_detector.py`
+- **Description:** Dissonanz-Berechnung, Dead-Zone, Status-Mapping, Node-Fallback
+- **Expected Result:** Korrekte numerische Dissonanz und Statuswerte
+- **Status:** Automated, In CI
 
-#### 1.2 Data Processing Tests
+#### 1.3 Governance Logic
 - **Test ID:** TC-003
-- **Description:** Validate data input handling
-- **Expected Result:** Valid data is accepted and processed
-- **Status:** Pending
+- **Module:** `tests/test_governance.py`
+- **Description:** Pillar-I-Veto, Pillar-II-Override, Pillar-III-Synergiepfad
+- **Expected Result:** GovernanceDecision entspricht Kontext und Schwellen
+- **Status:** Automated, In CI
 
+#### 1.4 Homeostasis Controller
 - **Test ID:** TC-004
-- **Description:** Test error handling for invalid data
-- **Expected Result:** Appropriate errors are raised
-- **Status:** Pending
+- **Module:** `tests/test_homeostasis.py`
+- **Description:** Trendanalyse, Spike-Erkennung, Dämpfung, Stabilitätscheck
+- **Expected Result:** Kritische Trends werden erkannt; Stabilitätslogik bleibt konsistent
+- **Status:** Automated, In CI
 
-### 2. Integration Tests
+#### 1.5 Biosemiotic Interpreter
+- **Test ID:** TC-005
+- **Module:** `tests/test_interpreter.py`
+- **Description:** Signal-Interpretation (Mycelium/Acoustics), Zustands-Synthese
+- **Expected Result:** BioState-Klassifikation korrekt, priorisierte Synthese korrekt
+- **Status:** Automated, In CI
 
-#### 2.1 Module Integration
+#### 1.6 Synergy Detection
+- **Test ID:** TC-006
+- **Module:** `tests/test_synergy.py`
+- **Description:** Kohärenz-Metrik und Erkennung aktiver Synergie-Muster
+- **Expected Result:** Relevante Muster werden identifiziert, Krisendaten liefern keine False Positives
+- **Status:** Automated, In CI
+
+#### 1.7 Cloud Governor
+- **Test ID:** TC-007
+- **Module:** `tests/test_cloud_governor.py`
+- **Description:** Vitalitätsmodell, Skalierungsentscheidungen, Min/Max-Worker-Grenzen
+- **Expected Result:** Erwartetes Scale-up/down-Verhalten und konsistente Statuswerte
+- **Status:** Automated, In CI
+
+### 2. Static Quality Checks (Automated + In CI)
+
+#### 2.1 Type Checking
 - **Test ID:** TC-101
-- **Description:** Test interaction between core modules
-- **Expected Result:** Modules communicate correctly
-- **Status:** Pending
+- **Tool:** `mypy`
+- **Description:** Statische Typprüfung für `src/biophilia`
+- **Expected Result:** Keine blockierenden Typfehler
+- **Status:** Automated, In CI
 
+#### 2.2 Linting & Format
 - **Test ID:** TC-102
-- **Description:** Verify data flow between components
-- **Expected Result:** Data is correctly passed and transformed
-- **Status:** Pending
+- **Tool:** `ruff`
+- **Description:** Lint-Regeln + Format-Check für `src/biophilia` und `tests`
+- **Expected Result:** Keine Lint-Fehler, keine Format-Abweichungen
+- **Status:** Automated, In CI
 
-#### 2.2 External Integration
-- **Test ID:** TC-103
-- **Description:** Test API endpoints (if applicable)
-- **Expected Result:** Endpoints respond with correct status codes
-- **Status:** Pending
+### 3. Planned Integration & Performance Tests
 
-### 3. Performance Tests
-
+#### 3.1 Integration End-to-End
 - **Test ID:** TC-201
-- **Description:** Measure execution time for core operations
-- **Expected Result:** Operations complete within acceptable timeframe
-- **Status:** Pending
+- **Description:** Vollständiger Tick-Lauf über `BIFApplication.run_network_tick` inkl. Chronicle, Governance und Dashboard
+- **Expected Result:** End-to-End-Fluss ohne Exceptions, konsistente Zustandsübergänge
+- **Status:** Planned
 
+#### 3.2 Performance Baseline
 - **Test ID:** TC-202
-- **Description:** Test memory usage under load
-- **Expected Result:** Memory usage remains within limits
-- **Status:** Pending
+- **Description:** Laufzeit- und Speicher-Benchmarks für zentrale Pfade
+- **Expected Result:** Definierte Schwellenwerte werden eingehalten
+- **Status:** Planned
 
-### 4. Edge Cases
+#### 3.3 Concurrency / Stress
+- **Test ID:** TC-203
+- **Description:** Belastungstests für parallele/serielle Tick-Verarbeitung
+- **Expected Result:** Keine Datenkorruption, stabile Laufzeit unter Last
+- **Status:** Planned
 
-- **Test ID:** TC-301
-- **Description:** Test with empty/null inputs
-- **Expected Result:** Graceful handling without crashes
-- **Status:** Pending
+## Prerequisites
+- Python `>=3.11`
+- `uv` installiert
+- Abhängigkeiten über `pyproject.toml`/`uv.lock`
 
-- **Test ID:** TC-302
-- **Description:** Test with maximum allowed inputs
-- **Expected Result:** System handles large inputs correctly
-- **Status:** Pending
-
-- **Test ID:** TC-303
-- **Description:** Test concurrent operations
-- **Expected Result:** Concurrent access is handled safely
-- **Status:** Pending
-
-## Test Execution
-
-### Prerequisites
-- Python 3.8+
-- Required dependencies installed (see requirements.txt)
-- Test environment configured
-
-### Running Tests
+## Running Tests
 
 ```bash
-# Run all tests
-python -m pytest
+# Abhängigkeiten synchronisieren
+uv sync --all-extras
 
-# Run specific test category
-python -m pytest tests/unit/
+# Alle Unit-Tests
+uv run pytest tests/ -v --tb=short
 
-# Run with coverage
-python -m pytest --cov=core/
+# Kurzlauf (wie Snapshot)
+uv run pytest tests/ -q
+
+# Einzelmodul
+uv run pytest tests/test_governance.py -v
+
+# Coverage
+uv run pytest tests/ --cov=src/biophilia --cov-report=term-missing
 ```
 
-## Test Results Template
+## Local Quality Gates (wie CI)
 
-| Test ID | Description | Status | Date | Notes |
-|---------|-------------|--------|------|-------|
-| TC-001  | Core module initialization | Pending | - | - |
-| TC-002  | Core functions with valid inputs | Pending | - | - |
-| TC-003  | Data input handling | Pending | - | - |
-| TC-004  | Error handling | Pending | - | - |
+```bash
+# Typprüfung
+uv run mypy src/biophilia --ignore-missing-imports
 
-## Known Issues
+# Linting
+uv run ruff check src/biophilia tests/
 
-- None documented yet
+# Format-Check
+uv run ruff format --check src/biophilia tests/
+```
 
-## Future Test Cases
+## CI Execution
+- Workflow: `.github/workflows/tests.yml`
+- Trigger: Push/PR auf `main` und `develop`
+- Matrix: `ubuntu-latest`, `macos-latest` mit Python `3.11`, `3.12`, `3.13`
 
-- [ ] Performance benchmarking tests
-- [ ] Security validation tests
-- [ ] Stress testing under high load
-- [ ] User acceptance testing (UAT)
+## Result Table (Current)
+
+| Test ID | Description | Status | Last Verified | Notes |
+|---------|-------------|--------|---------------|-------|
+| TC-001 | Integrity & tamper detection | Automated, In CI | 2026-05-18 | `tests/test_chronicle.py` |
+| TC-002 | Entropy detection logic | Automated, In CI | 2026-05-18 | `tests/test_entropy_detector.py` |
+| TC-003 | Governance decision paths | Automated, In CI | 2026-05-18 | `tests/test_governance.py` |
+| TC-004 | Homeostasis trend handling | Automated, In CI | 2026-05-18 | `tests/test_homeostasis.py` |
+| TC-005 | Biosemiotic interpretation | Automated, In CI | 2026-05-18 | `tests/test_interpreter.py` |
+| TC-006 | Synergy logic | Automated, In CI | 2026-05-18 | `tests/test_synergy.py` |
+| TC-007 | Cloud governor behavior | Automated, In CI | 2026-05-18 | `tests/test_cloud_governor.py` |
+| TC-101 | Static type check | Automated, In CI | 2026-05-18 | `mypy` job |
+| TC-102 | Lint + format checks | Automated, In CI | 2026-05-18 | `ruff` job |
+| TC-201 | End-to-end integration | Planned | - | Noch nicht als eigener Test-Suiteblock |
+| TC-202 | Performance baseline | Planned | - | Benchmark-Harness fehlt |
+| TC-203 | Concurrency / stress | Planned | - | Last-/Paralleltests geplant |
+
+## Known Gaps
+- Separate, dedizierte End-to-End-Integrationstests fehlen noch.
+- Performance- und Stress-Benchmarks sind geplant, aber noch nicht automatisiert.
 
 ## Contact
-
-For questions or contributions to test cases, please contact the development team or submit an issue.
+Bei Fragen zu Tests oder Testabdeckung bitte Issue öffnen oder direkt in `CONTRIBUTING.md` nach dem bevorzugten Workflow vorgehen.

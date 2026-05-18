@@ -2,3 +2,49 @@
 logs/
 __pycache__/
 venv_llm/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Packaging / distribution
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+venv_llm/
+env/
+.env         # ← local secrets; never commit
+
+# ── Testing / Coverage ────────────────────────────────────────────────────────
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+
+# ── Type checkers ─────────────────────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ── Runtime artefacts ─────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
