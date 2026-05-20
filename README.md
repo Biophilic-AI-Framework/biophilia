@@ -51,6 +51,9 @@ We welcome philosophers, AI engineers, and ethicists who believe that AI should 
 2. **Create** a feature branch.
 3. **Submit** a Pull Request with your improvements to the philosophy or the implementation.
 
+- `main` = stable; contains only fully validated, philosophically coherent changes.
+- `develop` = experimental; refactoring and testing are separated before merging into `main`.
+
 ---
 
 **"The goal is not an AI that does no harm, but an AI that actively does good."**
