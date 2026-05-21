@@ -105,8 +105,13 @@ class HomeostasisController:
         Return ``True`` when *current_value* is within *threshold* of the
         biological ideal for *parameter_name*.
         """
-        target = self.baseline.get(parameter_name, {}).get("ideal", 0.0)
+        from typing import cast
+
+        # Wir casten den Rückgabewert aus dem verschachtelten Dict explizit zu einem float
+        target = cast(float, self.baseline.get(parameter_name, {}).get("ideal", 0.0))
+        
         if target == 0.0:
             return True
+            
         deviation = abs(target - current_value) / target
         return deviation <= threshold
