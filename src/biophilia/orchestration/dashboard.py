@@ -18,11 +18,13 @@ class BiophilicDashboard:
     """In-memory state accumulator + render engine for the BIF dashboard."""
 
     def __init__(self) -> None:
-        self._node_history: dict[str, dict] = {}  # type: ignore[type-arg]
+        # Typisiert als dict[str, dict[str, Any]], um verschachtelte Strukturen zu erlauben
+        self._node_history: dict[str, dict[str, Any]] = {}
 
     # ── State updates ─────────────────────────────────────────────────────────
 
-    def update_node_state(self, node_name: str, data: dict) -> None:  # type: ignore[type-arg]
+    # Hier lag das Problem: 'data: dict' wird zu 'data: dict[str, Any]'
+    def update_node_state(self, node_name: str, data: dict[str, Any]) -> None:
         self._node_history[node_name] = data
 
     # ── Rendering ─────────────────────────────────────────────────────────────
@@ -117,7 +119,7 @@ class BiophilicDashboard:
         d2: float = self._get(n2, "detector", "dissonance", default=0.0)
         print(
             row(
-                f"{'"📉 Dissonance' :<32}  ",
+                f"{'📉 Dissonance' :<32}  ",
                 f"{self._barometer(d1)} ({d1:.4f})",
                 f"{self._barometer(d2)} ({d2:.4f})",
                 49
@@ -155,8 +157,8 @@ class BiophilicDashboard:
         print(sep)
 
         # ── Pillar III: Active synergies ───────────────────────────────────────
-        syn1: list = self._get(n1, "synergies", default=[])
-        syn2: list = self._get(n2, "synergies", default=[])
+        syn1: list[dict[str, str]] = self._get(n1, "synergies", default=[])
+        syn2: list[dict[str, str]] = self._get(n2, "synergies", default=[])
         if syn1 or syn2:
             print("✨ PILLAR III (1+1=3) ACTIVE EMERGENCE FREQUENCIES:")
             for s in syn1:
