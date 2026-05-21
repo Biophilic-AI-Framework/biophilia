@@ -15,6 +15,7 @@ import json
 import logging
 from importlib.resources import files
 from pathlib import Path
+from typing import Any  # <── Neu hinzugefügt für korrekte Dict-Typisierung
 
 logger = logging.getLogger(__name__)
 
@@ -35,13 +36,13 @@ class BiophilicEntropyDetector:
     def __init__(self, baseline_path: Path | str | None = None) -> None:
         if baseline_path is None:
             data_file = files("biophilia._data").joinpath("biophilic_baseline.json")
-            config: dict = json.loads(data_file.read_text(encoding="utf-8"))  # type: ignore[assignment]
+            config: dict[str, Any] = json.loads(data_file.read_text(encoding="utf-8"))  # <── Geändert: dict[str, Any] und kein ignore mehr nötig
         else:
             with open(baseline_path, encoding="utf-8") as fh:
                 config = json.load(fh)
 
         if "nodes" in config:
-            self.nodes_matrix: dict = config["nodes"]  # type: ignore[assignment]
+            self.nodes_matrix: dict[str, Any] = config["nodes"]  # <── Geändert: dict[str, Any] und kein ignore mehr nötig
         else:
             # Backwards-compatible single-node format.
             self.nodes_matrix = {
@@ -67,7 +68,8 @@ class BiophilicEntropyDetector:
         The result is stored in ``last_calculated_dissonance`` for use by the
         impact-audit decorator without any module-level coupling.
         """
-        node_cfg = self.nodes_matrix.get(node_name, self.nodes_matrix[_FALLBACK_NODE])
+        # Typisierung als dict[str, Any] hinzugefügt, damit mypy weiß, dass "baseline" ein valider Key ist
+        node_cfg: dict[str, Any] = self.nodes_matrix.get(node_name, self.nodes_matrix[_FALLBACK_NODE])
         baseline: dict[str, dict[str, float]] = node_cfg["baseline"]
 
         total_deviation = 0.0
@@ -100,7 +102,8 @@ class BiophilicEntropyDetector:
 
     def get_status(self, node_name: str, dissonance: float) -> str:
         """Map a dissonance score to a human-readable severity label."""
-        node_cfg = self.nodes_matrix.get(node_name, self.nodes_matrix[_FALLBACK_NODE])
+        # Typisierung als dict[str, Any] hinzugefügt, damit mypy weiß, dass "thresholds" ein valider Key ist
+        node_cfg: dict[str, Any] = self.nodes_matrix.get(node_name, self.nodes_matrix[_FALLBACK_NODE])
         thresholds: dict[str, float] = node_cfg["thresholds"]
 
         if dissonance >= thresholds["dissonance_critical"]:
