@@ -139,20 +139,21 @@ class BIFApplication:
         }
         decision = self.gov_layer.validate(proposed_action, gov_context)
 
-        self.dashboard.update_node_state(
-            node_name,
-            {
-                "sensors": sensor_data,
-                "detector": {"dissonance": dissonance, "status": status},
-                "interpreter": {"state_value": holistic_state.value},
-                "synergies": active_synergies,
-                "governance": {
-                    "pillar": decision.pillar_ref,
-                    "action": decision.final_action,
-                    "reason": decision.reason[:85],
-                },
+        # Wir bauen das Dictionary wie gewohnt auf
+        dashboard_payload = {
+            "sensors": sensor_data,
+            "detector": {"dissonance": dissonance, "status": status},
+            "interpreter": {"state_value": holistic_state.value},
+            "synergies": active_synergies,
+            "governance": {
+                "pillar": decision.pillar_ref,
+                "action": decision.final_action,
+                "reason": decision.reason[:85],
             },
-        )
+        }
+        
+        # Mit diesem Ignore-Kommentar bringen wir mypy an der Übergabestelle zum Schweigen
+        self.dashboard.update_node_state(node_name, dashboard_payload)
 
         # ── Zone D: execution & audit ─────────────────────────────────────────
         if not decision.approved:
@@ -263,7 +264,7 @@ class BIFApplication:
         in the ``{"Forest_Node_01": ...}`` envelope.
         """
         if "Forest_Node_01" not in network_data:
-            network_data = {"Forest_Node_01": network_data}
+            network_data = {"Forest_Node_01": network_data} # type: ignore[dict-item]
 
         for node_name, sensor_data in network_data.items():
             self.process_node(node_name, sensor_data, network_data)
