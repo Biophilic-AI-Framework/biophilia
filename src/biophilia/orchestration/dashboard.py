@@ -51,52 +51,52 @@ class BiophilicDashboard:
         print("\033[H\033[J", end="")
 
         sep = "=" * _WIDTH
-        row_sep = "-" * 32 + "--‖" + "-" * 54 + "‖" + "-" * 52
+        row_sep = "-" * 34 + "--‖" + "-" * 52 + "‖" + "-" * 52
 
         print(sep)
-        print(f"🌿 BIF NETWORK INTEGRITY MONITOR  │  {time.strftime('%Y-%m-%dT%H:%M:%S')}")
+        print(f"🌿 BIF NETWORK INTEGRITY MONITOR    │  {time.strftime('%Y-%m-%dT%H:%M:%S')}")
         print(f"🔒 CRYPTO-CHAIN-HEAD: {last_chronicle_hash}")
         print(sep)
 
         # Column headers
         print(
-            f"{'METRIC / SENSOR':<32}  ‖ "
-            f"{'FOREST_NODE_01 (Core Biosphere)':<52} ‖ "
+            f"{'METRIC / SENSOR':<32}    ‖ "
+            f"{'FOREST_NODE_01 (Core Biosphere)':<50} ‖ "
             f"{'FOREST_NODE_02 (Deep Forest Periphery)':<52}"
         )
         print(row_sep)
 
-        def row(label: str, *vals: Any) -> str:
-            v1, v2 = str(vals[0]), str(vals[1])
-            return f"{label:<34} ‖ {v1:<52} ‖ {v2:<52}"
+        def row(label: str, val0: Any, val1: Any, p1: int = 50) -> str:
+            v1, v2 = str(val0), str(val1)
+            return f"{label:<32} ‖ {v1:<{p1}} ‖ {v2:<52}"
 
         n1, n2 = "Forest_Node_01", "Forest_Node_02"
 
         # ── Biological raw data ────────────────────────────────────────────────
         print(
             row(
-                "🔊 Audio Harmony",
+                f"{'🔊 Audio Harmony' :<32}  ",
                 self._get(n1, "sensors", "audio_harmony", default=0.0),
                 self._get(n2, "sensors", "audio_harmony", default=0.0),
             )
         )
         print(
             row(
-                "💧 Soil Moisture",
+                f"{'💧 Soil Moisture' :<32}  ",
                 f"{self._get(n1, 'sensors', 'soil_moisture', default=0.0)} %",
                 f"{self._get(n2, 'sensors', 'soil_moisture', default=0.0)} %",
             )
         )
         print(
             row(
-                "☀️  Ambient Light",
+                f"{'☀️  Ambient Light' :<32}    ",
                 f"{self._get(n1, 'sensors', 'ambient_light', default=0.0)} Lux",
                 f"{self._get(n2, 'sensors', 'ambient_light', default=0.0)} Lux",
             )
         )
         print(
             row(
-                "⚡ Mycelium Activity",
+                f"{'⚡ Mycelium Activity' :<32}  ",
                 f"{self._get(n1, 'sensors', 'mycelium_activity', default=0.0)} V",
                 f"{self._get(n2, 'sensors', 'mycelium_activity', default=0.0)} V",
             )
@@ -106,7 +106,7 @@ class BiophilicDashboard:
         # ── Biosemiotic state ──────────────────────────────────────────────────
         print(
             row(
-                "🧬 Semiotic State",
+                f"{'🧬 Semiotic State' :<32}  ",
                 self._get(n1, "interpreter", "state_value", default="awaiting…"),
                 self._get(n2, "interpreter", "state_value", default="awaiting…"),
             )
@@ -117,14 +117,15 @@ class BiophilicDashboard:
         d2: float = self._get(n2, "detector", "dissonance", default=0.0)
         print(
             row(
-                "📉 Dissonance",
+                f"{'"📉 Dissonance' :<32}  ",
                 f"{self._barometer(d1)} ({d1:.4f})",
                 f"{self._barometer(d2)} ({d2:.4f})",
+                49
             )
         )
         print(
             row(
-                "⚠️  System Status",
+                f"{'⚠️  System Status' :<32}    ",
                 self._get(n1, "detector", "status", default="HARMONY"),
                 self._get(n2, "detector", "status", default="HARMONY"),
             )
@@ -134,14 +135,14 @@ class BiophilicDashboard:
         # ── Governance ────────────────────────────────────────────────────────
         print(
             row(
-                "🏛️  Evaluated Pillar",
+                f"{'🏛️  Evaluated Pillar' :<32}    ",
                 self._get(n1, "governance", "pillar", default="System Resonance"),
                 self._get(n2, "governance", "pillar", default="System Resonance"),
             )
         )
         print(
             row(
-                "🛠️  Final Action",
+                f"{'🛠️  Final Action' :<32}    ",
                 self._get(n1, "governance", "action", default="OBSERVE_AND_WAIT"),
                 self._get(n2, "governance", "action", default="OBSERVE_AND_WAIT"),
             )
@@ -150,7 +151,7 @@ class BiophilicDashboard:
 
         reason1 = str(self._get(n1, "governance", "reason", default="Resonance"))[:50]
         reason2 = str(self._get(n2, "governance", "reason", default="Resonance"))[:50]
-        print(row("💬 Moral Justification", reason1, reason2))
+        print(row(f"{'💬 Moral Justification' :<32}  ", reason1, reason2))
         print(sep)
 
         # ── Pillar III: Active synergies ───────────────────────────────────────
