@@ -12,6 +12,7 @@ import hashlib
 import json
 import logging
 from pathlib import Path
+from typing import Any, cast  # <── Neu importiert für Typisierung und Casting
 
 logger = logging.getLogger(__name__)
 
@@ -42,21 +43,22 @@ class IntegrityChronicle:
     # ── Private helpers ───────────────────────────────────────────────────────
 
     @staticmethod
-    def _hash(entry: dict) -> str:  # type: ignore[type-arg]
+    def _hash(entry: dict[str, Any]) -> str:  # <── Typisiert: dict[str, Any]
         """Deterministic SHA-256 over a JSON-serialised dict."""
         payload = json.dumps(entry, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(payload.encode()).hexdigest()
 
-    def _load(self) -> list[dict[str, object]]:  # type: ignore[type-arg]
+    def _load(self) -> list[dict[str, object]]:
         if not self.filename.exists():
             return []
         try:
-            return json.loads(self.filename.read_text(encoding="utf-8"))
+            # cast() hinzugefügt, um den Any-Rückgabewert von json.loads zu binden
+            return cast(list[dict[str, object]], json.loads(self.filename.read_text(encoding="utf-8")))
         except json.JSONDecodeError:
             logger.error("Chronicle file is structurally corrupt: %s", self.filename)
             return []
 
-    def _save(self, history: list[dict]) -> None:  # type: ignore[type-arg]
+    def _save(self, history: list[dict[str, Any]]) -> None:  # <── Typisiert: list[dict[str, Any]]
         self.filename.write_text(
             json.dumps(history, indent=4, ensure_ascii=False),
             encoding="utf-8",
@@ -69,7 +71,7 @@ class IntegrityChronicle:
         node_name: str,
         action_name: str,
         pillar: str,
-        reason: str | dict,  # type: ignore[type-arg]
+        reason: str | dict[str, Any],  # <── Typisiert: str | dict[str, Any]
         synergy_score: float,
     ) -> None:
         """
@@ -79,9 +81,11 @@ class IntegrityChronicle:
         and a ``current_hash`` that fingerprints its own content.
         """
         history = self._load()
-        previous_hash = history[-1]["current_hash"] if history else "0" * 64
+        
+        # cast zu str hinzugefügt, da history[...] den Typ object liefert
+        previous_hash = cast(str, history[-1]["current_hash"]) if history else "0" * 64
 
-        entry: dict = {  # type: ignore[type-arg]
+        entry: dict[str, Any] = {  # <── Typisiert: dict[str, Any]
             "timestamp": datetime.datetime.now().isoformat(),
             "node": node_name,
             "action": action_name,
@@ -92,8 +96,11 @@ class IntegrityChronicle:
         }
         entry["current_hash"] = self._hash(entry)
 
-        history.append(entry)
-        self._save(history)
+        # Ein kleiner technischer Cast, um das dict[str, Any] in die list[dict[str, object]] einzufügen
+        history.append(cast(dict[str, object], entry))
+        
+        # cast zu list[dict[str, Any]] für die Speicherfunktion
+        self._save(cast(list[dict[str, Any]], history))
 
         preview = str(reason)[:70]
         logger.info(
@@ -106,7 +113,8 @@ class IntegrityChronicle:
     def get_last_hash(self) -> str:
         """Return the ``current_hash`` of the most recent record, or a genesis string."""
         history = self._load()
-        return history[-1]["current_hash"] if history else "0" * 64
+        # cast zu str hinzugefügt, da Werte aus dict[str, object] für mypy nur 'object' sind
+        return cast(str, history[-1]["current_hash"]) if history else "0" * 64
 
     def verify_integrity(self) -> bool:
         """
