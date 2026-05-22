@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
-import pytest
 from dataclasses import FrozenInstanceError
 
-from biophilia.biosemiotics.interpreter import BioSignal, BioState, BiosemioticInterpreter
+import pytest
+
+from biophilia.biosemiotics.interpreter import BiosemioticInterpreter, BioSignal, BioState
 
 
 @pytest.fixture()
