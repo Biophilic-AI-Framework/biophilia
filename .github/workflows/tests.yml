@@ -62,9 +62,7 @@ jobs:
       run: uv sync --all-extras
 
     - name: Show Mypy Version Info
-      run: |
-        uv run mypy --version
-        uv run mypy --show-config
+      run: uv run mypy --version
 
     - name: Type check with mypy
       run: uv run mypy src/biophilia --ignore-missing-imports
