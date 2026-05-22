@@ -16,15 +16,15 @@ jobs:
         python-version: [ "3.11", "3.12", "3.13" ]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
 
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v5.4.0
       with:
         python-version: ${{ matrix.python-version }}
 
     - name: Install uv
-      uses: astral-sh/setup-uv@v2
+      uses: astral-sh/setup-uv@v5
       with:
         version: latest
 
@@ -38,12 +38,13 @@ jobs:
       run: uv run pytest tests/ --cov=src/biophilia --cov-report=xml
 
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
       with:
         files: ./coverage.xml
         flags: unittests
         name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}
         fail_ci_if_error: false
+        public-mode: true  # Erlaubt den Upload für öffentliche Repositories ohne Token
 
   type-check:
     runs-on: ubuntu-latest
